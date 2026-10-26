@@ -1,0 +1,262 @@
+{
+  "week": 3,
+  "title": "Week 3",
+  "questions": [
+    {
+      "id": "w3-q1",
+      "week": 3,
+      "number": 1,
+      "type": "TF",
+      "question": "State whether the following statement is true or false. Statement: There is no network layer in Wired HART",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "There is no network layer in Wired HART.",
+      "source": "See lecture 11 @ 05:22"
+    },
+    {
+      "id": "w3-q2",
+      "week": 3,
+      "number": 2,
+      "type": "MCQ",
+      "question": "Zwave operates at ________ MHz in the US and ________ MHz in Europe.",
+      "options": [
+        "1008,989",
+        "908.42, 868.42",
+        "767.56,855.28",
+        "None of these"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Zwave operates at 908.42 MHz in the US and 868.42 MHz in Europe.",
+      "source": "See lecture 13 @ 3:40"
+    },
+    {
+      "id": "w3-q3",
+      "week": 3,
+      "number": 3,
+      "type": "MCQ",
+      "question": "Dumb behavior of sensor nodes is _______________ in nature (as it is dependent on the effects of the environmental conditions).",
+      "options": [
+        "Temporal",
+        "Spatial",
+        "Both (a) and (b)",
+        "None of these"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Dumb behavior of sensor nodes is Temporal in nature (as it is dependent on the effects of the environmental conditions).",
+      "source": "See lecture 15 @ 05:40"
+    },
+    {
+      "id": "w3-q4",
+      "week": 3,
+      "number": 4,
+      "type": "MCQ",
+      "question": "The process of identifying channels consistently affected by interference and removing them from use is known as _________________.",
+      "options": [
+        "Channel Trimming",
+        "Channel Flushing",
+        "Both (a) and (b)",
+        "None of these"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Channel Blacklisting identifies channels consistently affected by interference and removes them from use.",
+      "source": "See lecture 11 @ 07:30"
+    },
+    {
+      "id": "w3-q5",
+      "week": 3,
+      "number": 5,
+      "type": "MCQ",
+      "question": "The full form of NFC is",
+      "options": [
+        "Near Field Contact",
+        "Near Field Communication",
+        "Both (a) and (b)",
+        "Neither (a) nor (b)"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The full form of NFC is Near Field Communication.",
+      "source": "See lecture 11 @ 17:44"
+    },
+    {
+      "id": "w3-q6",
+      "week": 3,
+      "number": 6,
+      "type": "TF",
+      "question": "State true or false. NFC works on the principle of magnetic induction.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "NFC works on the principle of magnetic induction.",
+      "source": "See lecture 11 @ 21:00"
+    },
+    {
+      "id": "w3-q7",
+      "week": 3,
+      "number": 7,
+      "type": "TF",
+      "question": "State whether the following statement is true or false. Statement: NFC tags found in supermarket products are examples of active NFC.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Passive NFC tags found in supermarket products are examples of passive NFC.",
+      "source": "See lecture 11 @ 18:47"
+    },
+    {
+      "id": "w3-q8",
+      "week": 3,
+      "number": 8,
+      "type": "MCQ",
+      "question": "Bluetooth is based on ___________.",
+      "options": [
+        "Nanonets",
+        "Binarynets",
+        "Both (a) and (b)",
+        "None of these"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Bluetooth is based on Piconets.",
+      "source": "See lecture 12 @ 01:55"
+    },
+    {
+      "id": "w3-q9",
+      "week": 3,
+      "number": 9,
+      "type": "MCQ",
+      "question": "A __________ in NFC emits a small electric current which creates a magnetic field that in turn bridges the physical space between the devices.",
+      "options": [
+        "reader",
+        "writer",
+        "destroyer",
+        "None of these"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A reader in NFC emits a small electric current which creates a magnetic field that in turn bridges the physical space between the devices",
+      "source": "See lecture 11 @ 20:31"
+    },
+    {
+      "id": "w3-q10",
+      "week": 3,
+      "number": 10,
+      "type": "MCQ",
+      "question": "State true of false. Bluetooth technology is based on Ad-hoc network technology.",
+      "options": [
+        "False",
+        "True"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Bluetooth technology is based on Ad-hoc network technology.",
+      "source": "See lecture 12 @ 02:30"
+    },
+    {
+      "id": "w3-q11",
+      "week": 3,
+      "number": 11,
+      "type": "TF",
+      "question": "State true or false. Zwave utilizes GFSK modulation and Hongkong channel encoding.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Zwave utilizes GFSK modulation and Manchester channel encoding.",
+      "source": "See lecture 13 @ 07:36"
+    },
+    {
+      "id": "w3-q12",
+      "week": 3,
+      "number": 12,
+      "type": "MCQ",
+      "question": "The process of bypassing radio dead-spots is done using a message called ________ in Zwave.",
+      "options": [
+        "Ping",
+        "Healing",
+        "Frame",
+        "None of these"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The process of bypassing radio dead-spots is done using a message called Healing in Zwave.",
+      "source": "See lecture 13 @ 11:34"
+    },
+    {
+      "id": "w3-q13",
+      "week": 3,
+      "number": 13,
+      "type": "TF",
+      "question": "State whether the following statement is true or false. Statement: Sensor nodes have unlimited battery life.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Sensors nodes have limited battery life.",
+      "source": "See lecture 14 @ 13:15"
+    },
+    {
+      "id": "w3-q14",
+      "week": 3,
+      "number": 14,
+      "type": "TF",
+      "question": "State whether the following statement is true or false. Statement: The Link Manager Protocol in Bluetooth manages the establishment, authentication, link configuration.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Link Manager Protocol in Bluetooth manages the establishment, authentication, link configuration. See Page number – 157, Chapter - 7, Book - Introduction to IoT, Authors – Sudip Misra, Anandarup Mukherjee, and Arijit Roy, Publisher – Cambridge University Press, Edition – 1 (2021)",
+      "source": ""
+    },
+    {
+      "id": "w3-q15",
+      "week": 3,
+      "number": 15,
+      "type": "MCQ",
+      "question": "Zigbee commonly uses __________data rate.",
+      "options": [
+        "250 kbps",
+        "250 Mbps",
+        "260 kbps",
+        "260 Mbps"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Zigbee commonly uses 250 kbps data rate. See Page number – 131, Chapter - 7, Book - Introduction to IoT, Authors – Sudip Misra, Anandarup Mukherjee, and Arijit Roy, Publisher – Cambridge University Press, Edition – 1 (2021)",
+      "source": ""
+    }
+  ]
+}

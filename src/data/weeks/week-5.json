@@ -1,0 +1,272 @@
+{
+  "week": 5,
+  "title": "Week 5",
+  "questions": [
+    {
+      "id": "w5-q1",
+      "week": 5,
+      "number": 1,
+      "type": "MCQ",
+      "question": "What does interoperability allow IoT devices to do?",
+      "options": [
+        "Communicate and exchange data",
+        "Work only offline",
+        "Use only one protocol",
+        "Disable other devices"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Interoperability enables different IoT devices and systems to communicate and exchange data.",
+      "source": "See Lecture 21 (Interoperability in Internet of Things) @ 03:30"
+    },
+    {
+      "id": "w5-q2",
+      "week": 5,
+      "number": 2,
+      "type": "MCQ",
+      "question": "Syntactic interoperability deals with:",
+      "options": [
+        "Message format",
+        "Battery size",
+        "Device colour",
+        "Sensor weight"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Syntactic interoperability concerns the format of messages exchanged between devices and users.",
+      "source": "See Lecture 21 (Interoperability in Internet of Things) @ 17:01"
+    },
+    {
+      "id": "w5-q3",
+      "week": 5,
+      "number": 3,
+      "type": "MCQ",
+      "question": "What does UMB stand for?",
+      "options": [
+        "Universal Middleware Bridge",
+        "Unified Mobile Board",
+        "Universal Memory Block",
+        "User Management Bridge"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "UMB stands for Universal Middleware Bridge. It helps different middleware-based devices work together.",
+      "source": "See Lecture 21 (Interoperability in Internet of Things) @ 25:42"
+    },
+    {
+      "id": "w5-q4",
+      "week": 5,
+      "number": 4,
+      "type": "MCQ",
+      "question": "What is the operating voltage of the Arduino UNO?",
+      "options": [
+        "3.3 V",
+        "5 V",
+        "9 V",
+        "12 V"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Arduino UNO operates at 5 volts.",
+      "source": "See Lecture 22: Introduction to Arduino Programming – Part I @ 06:57."
+    },
+    {
+      "id": "w5-q5",
+      "week": 5,
+      "number": 5,
+      "type": "MCQ",
+      "question": "What is a program written in the Arduino IDE called?",
+      "options": [
+        "Packet",
+        "Sketch",
+        "Frame",
+        "Query"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A program created and uploaded using the Arduino IDE is called a sketch.",
+      "source": "See Lecture 22 (Introduction to Arduino Programming - Part I) @ 12:12"
+    },
+    {
+      "id": "w5-q6",
+      "week": 5,
+      "number": 6,
+      "type": "MCQ",
+      "question": "Which interface is mainly used to connect an Arduino UNO to a computer?",
+      "options": [
+        "HDMI",
+        "USB",
+        "VGA",
+        "Ethernet"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Arduino UNO uses a USB interface to connect to a computer. The USB connection can be used to upload programs to the board and also provide power during development.",
+      "source": "See Lecture 22: Introduction to Arduino Programming – Part I @ 07:26"
+    },
+    {
+      "id": "w5-q7",
+      "week": 5,
+      "number": 7,
+      "type": "MCQ",
+      "question": "What is the conventional starting index of an array in Arduino programming?",
+      "options": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "As in C and C++, Arduino arrays use zero-based indexing. Therefore, the first element is stored at index 0.",
+      "source": "See Lecture 23 (Introduction to Arduino Programming - Part II) @ 04:08"
+    },
+    {
+      "id": "w5-q8",
+      "week": 5,
+      "number": 8,
+      "type": "MCQ",
+      "question": "Which Arduino function is used to generate a pseudo-random number within a specified range?",
+      "options": [
+        "random()",
+        "pinMode()",
+        "digitalWrite()",
+        "attachInterrupt()"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The random() function generates a pseudo-random number in a specified range. For example, random(max) produces a value within the range defined by max.",
+      "source": "See Lecture 23 (Introduction to Arduino Programming - Part II) @ 09:19"
+    },
+    {
+      "id": "w5-q9",
+      "week": 5,
+      "number": 9,
+      "type": "MCQ",
+      "question": "In the traffic-control example, which LED is switched ON first to represent the GO signal?",
+      "options": [
+        "Red LED",
+        "Yellow LED",
+        "Green LED",
+        "All three LEDs simultaneously"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The traffic() function first sets the green LED HIGH and displays the GO message. After a delay, it switches to yellow and then red.",
+      "source": "See Lecture 23 (Introduction to Arduino Programming - Part II) @ 14:34"
+    },
+    {
+      "id": "w5-q10",
+      "week": 5,
+      "number": 10,
+      "type": "MCQ",
+      "question": "Which quantities are measured by a DHT sensor?",
+      "options": [
+        "Temperature and humidity",
+        "Distance and speed",
+        "Light and sound",
+        "Pressure and altitude"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A DHT sensor measures the temperature and humidity of its surroundings.",
+      "source": "See Lecture 24: Integration of Sensors and Actuators with Arduino – Part I @ 04:37."
+    },
+    {
+      "id": "w5-q11",
+      "week": 5,
+      "number": 11,
+      "type": "MCQ",
+      "question": "What does a sensor convert a physical quantity into?",
+      "options": [
+        "A software program",
+        "Mechanical motion",
+        "A network address",
+        "An electrical signal"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A sensor is an electronic element that converts a physical quantity or measurement into an electrical signal.",
+      "source": "See Lecture 24: Integration of Sensors and Actuators with Arduino – Part I, Sensors section."
+    },
+    {
+      "id": "w5-q12",
+      "week": 5,
+      "number": 12,
+      "type": "MCQ",
+      "question": "In the DHT sensor sketch, delay(2000) causes successive readings to be printed after approximately how much time?",
+      "options": [
+        "0.2 seconds",
+        "1 second",
+        "2 seconds",
+        "20 seconds"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The delay() function takes time in milliseconds. Therefore, delay(2000) introduces a delay of 2000 milliseconds, which equals 2 seconds.",
+      "source": "See Lecture 24 (Integration of Sensors and Actuators with Arduino - Part I) @ 13:34"
+    },
+    {
+      "id": "w5-q13",
+      "week": 5,
+      "number": 13,
+      "type": "TF",
+      "question": "State whether the following statement is True or False. Statement: A servo motor is a low-precision motor used only for linear motion.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A servo motor is a high-precision motor that provides controlled rotary motion.",
+      "source": "See Lecture 25: Integration of Sensors and Actuators with Arduino – Part II @ 04:30."
+    },
+    {
+      "id": "w5-q14",
+      "week": 5,
+      "number": 14,
+      "type": "MCQ",
+      "question": "Which device provides controlled rotary motion?",
+      "options": [
+        "Ultrasonic sensor",
+        "DHT sensor",
+        "PIR sensor",
+        "Servo motor"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A servo motor is an actuator that provides precise and controlled rotary motion.",
+      "source": "See Lecture 25: Integration of Sensors and Actuators with Arduino – Part II @ 04:30."
+    },
+    {
+      "id": "w5-q15",
+      "week": 5,
+      "number": 15,
+      "type": "TF",
+      "question": "State whether the following statement is True or False. Statement: A stepper motor is a type of actuator.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A stepper motor is one of the motor actuators discussed in the lecture. Other examples include servo motors, hydraulic motors, solenoids, relays, and AC motors.",
+      "source": "See Lecture 25: Integration of Sensors and Actuators with Arduino – Part II @ 03:20."
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "week": 6,
+  "title": "Week 6",
+  "questions": [
+    {
+      "id": "w6-q1",
+      "week": 6,
+      "number": 1,
+      "type": "MCQ",
+      "question": "What are the five basic data types available in Python, as introduced in the lecture?",
+      "options": [
+        "Numbers, Strings, List, Tuple, Dictionary",
+        "Integer, Float, Boolean, Char, Byte",
+        "Array, Struct, Class, Object, Set",
+        "Numbers, Strings, Queue, Stack, Graph"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The lecture states that Python has five data types: Numbers, String, List, Tuple, and Dictionary.",
+      "source": "See Lecture 26 (Introduction to Python Programming – Part I) @ 15:50"
+    },
+    {
+      "id": "w6-q2",
+      "week": 6,
+      "number": 2,
+      "type": "MCQ",
+      "question": "Which keyword is used to define a function in Python?",
+      "options": [
+        "func",
+        "def",
+        "define",
+        "function"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A function in Python is defined using the def keyword, followed by the function name and its arguments.",
+      "source": "See Lecture 26 (Introduction to Python Programming – Part I) @ 19:20"
+    },
+    {
+      "id": "w6-q3",
+      "week": 6,
+      "number": 3,
+      "type": "MCQ",
+      "question": "In Python's exception handling, which keyword is used to handle an exception raised inside the try block?",
+      "options": [
+        "catch",
+        "except",
+        "handle",
+        "rescue"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Python uses the try, except and else block structure for exception handling; the except block catches the exception raised in the try block.",
+      "source": "See Lecture 26 (Introduction to Python Programming – Part I) @ 28:55"
+    },
+    {
+      "id": "w6-q4",
+      "week": 6,
+      "number": 4,
+      "type": "MCQ",
+      "question": "Which mode of Python's open() function is used to add data to the end of an existing file without erasing its existing content?",
+      "options": [
+        "r (read mode)",
+        "w (write mode)",
+        "a (append mode)",
+        "r+ (read and write mode)"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Python supports four basic file modes: r (read), w (write), a (append), and r+ (read and write). The append mode adds new data to the end of the file without deleting existing content.",
+      "source": "See Lecture 27 (Introduction to Python Programming – Part II) @ 02:55"
+    },
+    {
+      "id": "w6-q5",
+      "week": 6,
+      "number": 5,
+      "type": "MCQ",
+      "question": "Which Python library, installable via pip, is used for image read/write operations as covered in the lecture?",
+      "options": [
+        "NumPy",
+        "PIL / Pillow",
+        "OpenCV",
+        "Matplotlib"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "PIL (Python Image Library) is used to work with image files. It is installed using 'sudo pip install pillow'; PIL supports up to Python 2.7 while Pillow supports Python 3.x.",
+      "source": "See Lecture 27 (Introduction to Python Programming – Part II) @ 17:25"
+    },
+    {
+      "id": "w6-q6",
+      "week": 6,
+      "number": 6,
+      "type": "MCQ",
+      "question": "Which socket_type value is used while creating a TCP/IP socket in Python's socket module?",
+      "options": [
+        "SOCK_DGRAM",
+        "SOCK_STREAM",
+        "SOCK_RAW",
+        "SOCK_SEQPACKET"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A socket is created using socket.socket(socket_family, socket_type, protocol). For a TCP/IP (connection-oriented) socket, socket_family is AF_INET and socket_type is SOCK_STREAM.",
+      "source": "See Lecture 27 (Introduction to Python Programming – Part II) @ 24:40"
+    },
+    {
+      "id": "w6-q7",
+      "week": 6,
+      "number": 7,
+      "type": "MCQ",
+      "question": "How many GPIO pins does the Raspberry Pi 3 Model B have, as shown in the specifications table?",
+      "options": [
+        "26",
+        "32",
+        "40",
+        "44"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "As per the specifications table, the Raspberry Pi 3 Model B, Raspberry Pi 2 Model B, and Raspberry Pi Zero all have 40 GPIO pins.",
+      "source": "See Lecture 28 (Introduction to Raspberry Pi – Part I) @ 05:10"
+    },
+    {
+      "id": "w6-q8",
+      "week": 6,
+      "number": 8,
+      "type": "MCQ",
+      "question": "Which of the following is an officially supported operating system for Raspberry Pi mentioned in the lecture?",
+      "options": [
+        "Raspbian",
+        "Windows XP",
+        "macOS",
+        "Solaris"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Raspbian and NOOBS are the officially supported operating systems for Raspberry Pi. Ubuntu Mate, Snappy Ubuntu Core, Windows 10 Core, Pinet, and RISC OS are examples of third-party operating systems.",
+      "source": "See Lecture 28 (Introduction to Raspberry Pi – Part I) @ 12:05"
+    },
+    {
+      "id": "w6-q9",
+      "week": 6,
+      "number": 9,
+      "type": "MCQ",
+      "question": "Raspberry Pi is best described as a:",
+      "options": [
+        "Printer",
+        "Smartphone",
+        "Wi-Fi router",
+        "Single-board computer"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The lecture introduces Raspberry Pi as a computer that fits in your palm — a low-cost, single-board computer that is easy to access and use.",
+      "source": "See Lecture 28 (Introduction to Raspberry Pi – Part I) @ 04:45"
+    },
+    {
+      "id": "w6-q10",
+      "week": 6,
+      "number": 10,
+      "type": "MCQ",
+      "question": "Which command is used to install the GPIO library on Raspberry Pi before programming the blinking LED example?",
+      "options": [
+        "sudo apt-get install python-rpi.gpio",
+        "pip install gpio",
+        "sudo apt-get install led-lib",
+        "npm install rpi-gpio"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "After installing Python development tools using 'sudo apt-get install python-dev', the GPIO library is installed using 'sudo apt-get install python-rpi.gpio'.",
+      "source": "See Lecture 29 (Introduction to Raspberry Pi – Part II) @ 07:43"
+    },
+    {
+      "id": "w6-q11",
+      "week": 6,
+      "number": 11,
+      "type": "MCQ",
+      "question": "Where is the CSI camera connector slot located on the Raspberry Pi board?",
+      "options": [
+        "Between the USB ports",
+        "Between the Ethernet port and the HDMI port",
+        "Next to the power supply pin",
+        "On the underside of the board"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Raspberry Pi Camera connects through a dedicated CSI slot, which is placed between the Ethernet port and the HDMI port on the board.",
+      "source": "See Lecture 29 (Introduction to Raspberry Pi – Part II) @ 18:27"
+    },
+    {
+      "id": "w6-q12",
+      "week": 6,
+      "number": 12,
+      "type": "MCQ",
+      "question": "Which terminal command captures a still image using the Raspberry Pi camera?",
+      "options": [
+        "raspistill -o image.jpg",
+        "raspicam capture",
+        "pi-camera snap",
+        "capture.py --img"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Running 'raspistill -o image.jpg' in the terminal captures an image using the Raspberry Pi camera and stores it as image.jpg.",
+      "source": "See Lecture 29 (Introduction to Raspberry Pi – Part II) @ 19:35"
+    },
+    {
+      "id": "w6-q13",
+      "week": 6,
+      "number": 13,
+      "type": "MCQ",
+      "question": "What does DHT stand for in the DHT sensor used with Raspberry Pi in the auto-cooling system?",
+      "options": [
+        "Digital Heat Transfer",
+        "Digital Humidity and Temperature",
+        "Direct Hardware Trigger",
+        "Dual Humidity Thermostat"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "DHT stands for Digital Humidity and Temperature Sensor. It has 4 pins: PIN 1 (3.3V–5V power supply), PIN 2 (Data), PIN 3 (Null), and PIN 4 (Ground).",
+      "source": "See Lecture 30 (Implementation of IoT with Raspberry Pi – Part I) @ 05:20"
+    },
+    {
+      "id": "w6-q14",
+      "week": 6,
+      "number": 14,
+      "type": "MCQ",
+      "question": "How many output terminals does the relay used in the temperature-dependent auto-cooling system have, as shown in the lecture?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The relay is a mechanical/electromechanical switch with 3 output terminals (left to right): NO (normal open), Common, and NC (normal close).",
+      "source": "See Lecture 30 (Implementation of IoT with Raspberry Pi – Part I) @ 07:50"
+    },
+    {
+      "id": "w6-q15",
+      "week": 6,
+      "number": 15,
+      "type": "TF",
+      "question": "State whether the following statement is True or False. Statement: In the temperature-dependent auto-cooling system, the fan operates when the surrounding temperature rises above the threshold value specified in the code.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The lecture demonstrates that the fan is switched on whenever the measured temperature exceeds the threshold value set in the program.",
+      "source": "See Lecture 30 (Implementation of IoT with Raspberry Pi – Part I) @ 18:14"
+    }
+  ]
+}

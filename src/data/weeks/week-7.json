@@ -1,0 +1,274 @@
+{
+  "week": 7,
+  "title": "Week 7",
+  "questions": [
+    {
+      "id": "w7-q1",
+      "week": 7,
+      "number": 1,
+      "type": "MCQ",
+      "question": "In the remote data logging system, which socket type is used to send sensor data from the client to the server?",
+      "options": [
+        "SOCK_STREAM",
+        "SOCK_DGRAM",
+        "SOCK_RAW",
+        "SOCK_SEQPACKET"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The client creates a UDP socket using socket.socket(socket.AF_INET, socket.SOCK_DGRAM) to send the sensor readings to the server.",
+      "source": "See Lecture 31 (Implementation of IoT with Raspberry Pi – Part 2) @ 07:10"
+    },
+    {
+      "id": "w7-q2",
+      "week": 7,
+      "number": 2,
+      "type": "MCQ",
+      "question": "Which Adafruit function is used in the client code to read humidity and temperature values from the DHT sensor?",
+      "options": [
+        "Adafruit_DHT.read_retry()",
+        "Adafruit_DHT.get_data()",
+        "Adafruit_DHT.sense()",
+        "Adafruit_DHT.capture()"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The sensordata() function calls Adafruit_DHT.read_retry(sensor,17), which returns the humidity and temperature values from the DHT sensor.",
+      "source": "See Lecture 31 (Implementation of IoT with Raspberry Pi – Part 2) @ 04:50"
+    },
+    {
+      "id": "w7-q3",
+      "week": 7,
+      "number": 3,
+      "type": "MCQ",
+      "question": "Where does the server in the remote data logging example save the data received from the client as mentioned in the lecture?",
+      "options": [
+        "In a MySQL database",
+        "In a text file named Datalog.txt",
+        "On a cloud dashboard",
+        "In an Excel spreadsheet"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The server code opens 'Datalog.txt' in append mode and writes the received message from the client into this text file.",
+      "source": "See Lecture 31 (Implementation of IoT with Raspberry Pi – Part 2) @ 15:40"
+    },
+    {
+      "id": "w7-q4",
+      "week": 7,
+      "number": 4,
+      "type": "MCQ",
+      "question": "Which Python string function is used to split the comma-separated sensor data into separate values on the server?",
+      "options": [
+        "split()",
+        "divide()",
+        "partition()",
+        "separate()"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The split() function splits a string into multiple strings based on a specified separator/delimiter, e.g. Data.split(\",\") splits data wherever a comma is found.",
+      "source": "See Lecture 32 (Implementation of IoT with Raspberry Pi – Part 3) @ 08:40"
+    },
+    {
+      "id": "w7-q5",
+      "week": 7,
+      "number": 5,
+      "type": "MCQ",
+      "question": "State whether the following statement is True or False. Statement: Matplotlib Python library is used to plot the temperature and humidity data received at the server in the lecture.",
+      "options": [
+        "False",
+        "True"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "MATPLOTLIB is a Python library used to create 2D plots; functions such as plot(), xlabel(), ylabel(), and title() are used to plot and label the sensor data.",
+      "source": "See Lecture 32 (Implementation of IoT with Raspberry Pi – Part 3) @ 12:15"
+    },
+    {
+      "id": "w7-q6",
+      "week": 7,
+      "number": 6,
+      "type": "MCQ",
+      "question": "Which matplotlib function turns on interactive mode so that the plot updates in real time as new data arrives?",
+      "options": [
+        "ion()",
+        "grid()",
+        "subplot()",
+        "figure()"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "ion() turns on the interactive mode in matplotlib. Other common plotting functions mentioned include figure(), grid(), subplot(), close(), and scatter().",
+      "source": "See Lecture 32 (Implementation of IoT with Raspberry Pi – Part 3) @ 23:25"
+    },
+    {
+      "id": "w7-q7",
+      "week": 7,
+      "number": 7,
+      "type": "MCQ",
+      "question": "In a traditional (non-SDN) network, where does the routing protocol logic (e.g., OSPF) mainly execute?",
+      "options": [
+        "In a centralized controller",
+        "At the individual switches",
+        "On the end-user device",
+        "In the cloud"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In the current network, protocols like OSPF execute at the switches, which forward traffic in a distributed manner with no centralized control.",
+      "source": "See Lecture 33 (Software-Defined Networking – Part I) @ 04:10"
+    },
+    {
+      "id": "w7-q8",
+      "week": 7,
+      "number": 8,
+      "type": "MCQ",
+      "question": "In which year was the OpenFlow project — from which the idea of software-defined networking originated — presented at ACM SIGCOMM?",
+      "options": [
+        "2006",
+        "2008",
+        "2009",
+        "2011"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The idea of software-defined networking originated from the OpenFlow project, presented at ACM SIGCOMM in 2008. Stanford published the OpenFlow V1.0.0 specification the following year.",
+      "source": "See Lecture 33 (Software-Defined Networking – Part I) @ 10:50"
+    },
+    {
+      "id": "w7-q9",
+      "week": 7,
+      "number": 9,
+      "type": "MCQ",
+      "question": "What message does a switch send to the SDN controller when it receives a packet for which no matching flow-rule exists?",
+      "options": [
+        "PACKET-IN message",
+        "FLOW-REQUEST message",
+        "RULE-MISS alert",
+        "CONTROL-SYNC message"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "When no flow-rule is present for an incoming request, the switch sends a PACKET-IN message to the controller, which then decides a suitable flow-rule and inserts it at the switch.",
+      "source": "See Lecture 33 (Software-Defined Networking – Part I) @ 22:33"
+    },
+    {
+      "id": "w7-q10",
+      "week": 7,
+      "number": 10,
+      "type": "MCQ",
+      "question": "Which SDN API is used for communication between the control layer and the infrastructure layer?",
+      "options": [
+        "Northbound API",
+        "Southbound API",
+        "East-Westbound API",
+        "North-Southbound API"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Southbound API is used to communicate between the control layer and the infrastructure layer using the OpenFlow protocol. The Northbound API communicates between the control and application layers.",
+      "source": "See Lecture 34 (Software-Defined Networking – Part II) @ 02:00"
+    },
+    {
+      "id": "w7-q11",
+      "week": 7,
+      "number": 11,
+      "type": "MCQ",
+      "question": "According to the lecture, approximately how many requests per second can a typical SDN controller handle through a single thread?",
+      "options": [
+        "50",
+        "100",
+        "200",
+        "500"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The lecture states that a controller can typically handle around 200 requests in a second through a single thread.",
+      "source": "See Lecture 34 (Software-Defined Networking – Part II) @ 04:10"
+    },
+    {
+      "id": "w7-q12",
+      "week": 7,
+      "number": 12,
+      "type": "MCQ",
+      "question": "Which control mechanism is described where the entire network's control decisions are taken by a single controller?",
+      "options": [
+        "Distributed control",
+        "Centralized control",
+        "Hierarchical control",
+        "Federated control"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In centralized control, control decisions are taken in a centralized manner by a single controller, unlike distributed control where each subnetwork is controlled by a different controller.",
+      "source": "See Lecture 34 (Software-Defined Networking – Part II) @ 08:15"
+    },
+    {
+      "id": "w7-q13",
+      "week": 7,
+      "number": 13,
+      "type": "MCQ",
+      "question": "Which of the following is listed as a benefit of integrating SDN with IoT?",
+      "options": [
+        "Increased hardware cost",
+        "Visibility of network resources",
+        "Reduced sensor accuracy",
+        "Elimination of all controllers"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Benefits of integrating SDN in IoT include intelligent routing decisions, simplified information collection/analysis/decision-making, visibility of network resources, and intelligent traffic pattern analysis.",
+      "source": "See Lecture 35 (Software-Defined IoT Networking – Part I) @ 02:50"
+    },
+    {
+      "id": "w7-q14",
+      "week": 7,
+      "number": 14,
+      "type": "MCQ",
+      "question": "According to the lecture, what is a key resource-constraint challenge in wireless sensor networks that motivates software-defined WSN?",
+      "options": [
+        "Excess bandwidth",
+        "Limited memory for control programs",
+        "Too many controllers",
+        "Unlimited computation power"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Wireless sensor network challenges include real-time programming of sensor nodes, vendor-specific architecture, resource-constrained (heavy computation cannot be performed) devices, and limited memory, meaning too many control programs cannot be inserted.",
+      "source": "See Lecture 35 (Software-Defined IoT Networking – Part I) @ 08:10"
+    },
+    {
+      "id": "w7-q15",
+      "week": 7,
+      "number": 15,
+      "type": "MCQ",
+      "question": "In the SDN-WISE protocol stack for sensor nodes, what does \"INPP\" stand for?",
+      "options": [
+        "Integrated Node Path Protocol",
+        "Internal Node Power Processing",
+        "In Network Packet Processing",
+        "IoT Network Priority Protocol"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In the SDN-WISE protocol stack, the forwarding layer above IEEE 802.15.4 consists of flow-rules, and INPP stands for In Network Packet Processing.",
+      "source": "See Lecture 35 (Software-Defined IoT Networking – Part I) @ 15:35"
+    }
+  ]
+}

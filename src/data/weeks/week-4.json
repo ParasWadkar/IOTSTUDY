@@ -1,0 +1,273 @@
+{
+  "week": 4,
+  "title": "Week 4",
+  "questions": [
+    {
+      "id": "w4-q1",
+      "week": 4,
+      "number": 1,
+      "type": "MCQ",
+      "question": "What does the ultrasonic sensor measure generally in the AID system?",
+      "options": [
+        "Humidity",
+        "Distance of the object",
+        "Soil pH",
+        "Light intensity"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In the Agricultural Intrusion Detection system, the ultrasonic sensor measures the distance at which the detected object is located.",
+      "source": "See Lecture 16: Sensor Networks – Part III @ 13:22"
+    },
+    {
+      "id": "w4-q2",
+      "week": 4,
+      "number": 2,
+      "type": "MCQ",
+      "question": "Which component processes the data received from the sensors in the AID system?",
+      "options": [
+        "Camera",
+        "NFC tag",
+        "Microcontroller",
+        "Ultrasonic sensor"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The microcontroller processes the data received from the sensors in the AID system.",
+      "source": "See Lecture 16: Sensor Networks - Part III @ 17:07"
+    },
+    {
+      "id": "w4-q3",
+      "week": 4,
+      "number": 3,
+      "type": "MSQ",
+      "question": "How can standard nanodevices communicate?",
+      "options": [
+        "Electromagnetic communication",
+        "Molecular communication",
+        "Wired Ethernet",
+        "ZigBee communication"
+      ],
+      "correct": [
+        0,
+        1
+      ],
+      "explanation": "The lecture discusses electromagnetic and molecular communication for nanodevices.",
+      "source": "See Lecture 16: Sensor Networks - Part III @ 25:11"
+    },
+    {
+      "id": "w4-q4",
+      "week": 4,
+      "number": 4,
+      "type": "MCQ",
+      "question": "When does sensing coverage guarantee network connectivity?",
+      "options": [
+        "When the transmission range is at least twice the sensing range",
+        "When the sensing range is at least twice the transmission range",
+        "When the transmission and sensing ranges are equal",
+        "When the transmission range is smaller than the sensing range"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Sensing coverage guarantees connectivity when the transmission range is at least twice the sensing range.",
+      "source": "See Lecture 17: Sensor Networks - Part IV @ 04:14"
+    },
+    {
+      "id": "w4-q5",
+      "week": 4,
+      "number": 5,
+      "type": "MCQ",
+      "question": "Which of the following is a coverage problem in a static WSN?",
+      "options": [
+        "Area coverage",
+        "Data compression",
+        "Route encryption",
+        "Clock synchronization"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Area coverage is a standard coverage problem in a static wireless sensor network. The other options are networking tasks, not coverage categories.",
+      "source": "See Lecture 17: Sensor Networks - Part IV @ 11:30"
+    },
+    {
+      "id": "w4-q6",
+      "week": 4,
+      "number": 6,
+      "type": "MCQ",
+      "question": "Which reporting method is used for forest-fire monitoring in a WSN?",
+      "options": [
+        "Event-driven reporting",
+        "On-demand reporting",
+        "Manual reporting",
+        "Location-based reporting"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Forest-fire monitoring uses event-driven reporting because sensor nodes report data when a fire-related event is detected. The lecture contrasts this with on-demand reporting, such as an inventory- control system.",
+      "source": "See Lecture 17: Sensor Networks – Part IV @ 01:44."
+    },
+    {
+      "id": "w4-q7",
+      "week": 4,
+      "number": 7,
+      "type": "MCQ",
+      "question": "What does a data mule do?",
+      "options": [
+        "Replaces all sensor nodes",
+        "Measures only temperature",
+        "Collects data and carries it to the sink",
+        "Repairs damaged hardware"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A data mule visits sensor nodes, collects their data, and delivers it to the sink.",
+      "source": "See Lecture 18: Sensor Networks - Part V @ 07:15"
+    },
+    {
+      "id": "w4-q8",
+      "week": 4,
+      "number": 8,
+      "type": "MCQ",
+      "question": "What may happen if a critical stationary sensor node fails?",
+      "options": [
+        "The network may be partitioned",
+        "All nodes become mobile",
+        "The sensing range doubles",
+        "The network repairs itself by movement"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Failure of a critical stationary node may divide the network into disconnected parts.",
+      "source": "See Lecture 18: Sensor Networks - Part V @ 00:43"
+    },
+    {
+      "id": "w4-q9",
+      "week": 4,
+      "number": 9,
+      "type": "MCQ",
+      "question": "A person who provides sensing information acts as a:",
+      "options": [
+        "Router",
+        "Radio channel",
+        "Actuator",
+        "Data source"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In human-centric sensing, a person may act as a data source by providing or collecting information.",
+      "source": "See Lecture 18: Sensor Networks - Part V @ 12:35"
+    },
+    {
+      "id": "w4-q10",
+      "week": 4,
+      "number": 10,
+      "type": "MCQ",
+      "question": "Which is an advantage of a stationary wireless sensor network?",
+      "options": [
+        "Easy topology maintenance",
+        "Automatic movement after node failure",
+        "Continuously changing topology",
+        "Unpredictable sensor locations"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "In a stationary wireless sensor network, sensor nodes remain fixed. Therefore, deployment and topology maintenance are comparatively easier.",
+      "source": "See Lecture 18: Sensor Networks – Part V @ 00:43"
+    },
+    {
+      "id": "w4-q11",
+      "week": 4,
+      "number": 11,
+      "type": "TF",
+      "question": "State whether the following statement is True or False. Statement: In a UAV network, the network topology may change frequently because the UAVs are mobile.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "UAVs move from one location to another, causing frequent changes in their relative positions and communication links. Therefore, the network topology may change frequently.",
+      "source": "See Lecture 19: UAV Networks @ 05:23"
+    },
+    {
+      "id": "w4-q12",
+      "week": 4,
+      "number": 12,
+      "type": "MCQ",
+      "question": "Which is a common issue in UAV networks?",
+      "options": [
+        "Frequent topology changes",
+        "Fixed relative positions",
+        "Permanent communication links",
+        "No possibility of UAV failure"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "UAV movement causes frequent changes in network topology and communication links.",
+      "source": "See Lecture 19: UAV Networks @ 05:23"
+    },
+    {
+      "id": "w4-q13",
+      "week": 4,
+      "number": 13,
+      "type": "MCQ",
+      "question": "Compared with traditional SCADA, M2M supports:",
+      "options": [
+        "Only isolated systems",
+        "No device communication",
+        "Continuous human control",
+        "Cross-platform integration"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Traditional SCADA commonly uses isolated proprietary systems, while M2M supports cross-platform integration.",
+      "source": "See Lecture 20: Machine to Machine Communication @ 04:28"
+    },
+    {
+      "id": "w4-q14",
+      "week": 4,
+      "number": 14,
+      "type": "TF",
+      "question": "State whether the following statement is True or False. Statement: In a stationary wireless sensor network, sensor nodes can automatically move to restore connectivity after a node failure.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In a stationary wireless sensor network, sensor nodes remain fixed. Therefore, they cannot move automatically to repair connectivity after a node failure.",
+      "source": "See Lecture 18: Sensor Networks – Part V @ 00:43"
+    },
+    {
+      "id": "w4-q15",
+      "week": 4,
+      "number": 15,
+      "type": "MCQ",
+      "question": "Which statement best describes M2M communication?",
+      "options": [
+        "Devices can exchange data without direct human control",
+        "Every data exchange must be performed manually",
+        "Only one device can communicate at a time",
+        "Devices cannot communicate through a network"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "M2M communication allows machines or devices to exchange data automatically. Human intervention may still be required for maintenance and operational stability.",
+      "source": "See Lecture 20: Machine to Machine Communication @ 09:24."
+    }
+  ]
+}

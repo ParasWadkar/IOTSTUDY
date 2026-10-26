@@ -1,0 +1,276 @@
+{
+  "week": 12,
+  "title": "Week 12",
+  "questions": [
+    {
+      "id": "w12-q1",
+      "week": 12,
+      "number": 1,
+      "type": "MCQ",
+      "question": "Which type of data analysis is used for data that is categorical in nature?",
+      "options": [
+        "Qualitative analysis",
+        "Quantitative analysis",
+        "Regression analysis",
+        "Analysis of variance"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Qualitative analysis deals with categorical data, whereas quantitative analysis is used for numerical data.",
+      "source": "See Lecture 56 (Data Handling and Analytics - Part II, slide 3)"
+    },
+    {
+      "id": "w12-q2",
+      "week": 12,
+      "number": 2,
+      "type": "MCQ",
+      "question": "According to the lecture, when is a statistical model classified as a complete model?",
+      "options": [
+        "When the number of variables equals the number of equations",
+        "When the model contains no variables",
+        "When the number of variables is always greater than the number of equations",
+        "When only categorical data are used"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A complete statistical model has the same number of variables as equations. If these numbers do not match, the model is incomplete.",
+      "source": "See Lecture 56 (Data Handling and Analytics - Part II, slide 9)"
+    },
+    {
+      "id": "w12-q3",
+      "week": 12,
+      "number": 3,
+      "type": "MCQ",
+      "question": "Analysis of Variance (ANOVA) is best applied when which of the following are to be compared?",
+      "options": [
+        "Only a single observation",
+        "More than two populations or samples",
+        "Only non-numerical labels without any response variable",
+        "Only identical copies of the same observation"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "ANOVA is introduced as a parametric statistical technique for comparing datasets and is especially useful when more than two populations or samples are being compared.",
+      "source": "See Lecture 56 (Data Handling and Analytics - Part II, slide 11)"
+    },
+    {
+      "id": "w12-q4",
+      "week": 12,
+      "number": 4,
+      "type": "MCQ",
+      "question": "What does Pearson's correlation coefficient (r) measure?",
+      "options": [
+        "The number of equations in a statistical model",
+        "The maximum value in a dataset",
+        "The strength of association between two variables",
+        "The sample size of an experiment"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Pearson's correlation coefficient is used to measure the strength of association between two quantitative, continuous variables.",
+      "source": "See Lecture 56 (Data Handling and Analytics - Part II, slide 18)"
+    },
+    {
+      "id": "w12-q5",
+      "week": 12,
+      "number": 5,
+      "type": "MCQ",
+      "question": "What is a primary objective of the AgriSens smart water management system?",
+      "options": [
+        "Restricting irrigation control to manual operation only",
+        "Increasing irrigation water use regardless of soil condition",
+        "Removing all sensors from agricultural fields",
+        "Achieving more crop yield with less water"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "AgriSens aims to improve water management by using less water while maintaining or improving crop yield, along with automatic irrigation and remote monitoring.",
+      "source": "See Lecture 57 (Case Study: Agriculture, slide 4)"
+    },
+    {
+      "id": "w12-q6",
+      "week": 12,
+      "number": 6,
+      "type": "MCQ",
+      "question": "Which set correctly represents the three layers of the proposed AgriSens architecture?",
+      "options": [
+        "Physical layer; transport layer; presentation layer",
+        "Sensing and actuating layer; processing, storage and service layer; application layer",
+        "User layer; billing layer; routing layer",
+        "Sensor layer; firewall layer; operating-system layer"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The proposed AgriSens architecture is organized into a sensing and actuating layer, a processing, storage and service layer, and an application layer.",
+      "source": "See Lecture 57 (Case Study: Agriculture, slide 5)"
+    },
+    {
+      "id": "w12-q7",
+      "week": 12,
+      "number": 7,
+      "type": "MCQ",
+      "question": "Which component is included in the integrated design of an AgriSens sensor node?",
+      "options": [
+        "Meter data management system for smart grids",
+        "Power management unit",
+        "Phasor measurement unit",
+        "Hadoop Namenode"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The AgriSens sensor node contains sensors and actuators, a processing and memory unit, a wireless communication unit, and a power management unit.",
+      "source": "See Lecture 57 (Case Study: Agriculture, slide 8)"
+    },
+    {
+      "id": "w12-q8",
+      "week": 12,
+      "number": 8,
+      "type": "MCQ",
+      "question": "What is the function of the multi-user server in the AgriSens remote-server design?",
+      "options": [
+        "It supplies electrical power to the sensor nodes",
+        "It measures soil moisture directly in the field",
+        "It sends field information to the farmer's mobile phone using SMS and executes farmer queries and control messages",
+        "It replaces all gateways with wired links"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The multi-user server communicates field information to farmers through SMS and also processes farmer queries and control commands.",
+      "source": "See Lecture 57 (Case Study: Agriculture, slide 10)"
+    },
+    {
+      "id": "w12-q9",
+      "week": 12,
+      "number": 9,
+      "type": "MCQ",
+      "question": "In the IoT healthcare architecture discussed in the lecture, which layer contains smartphones and tablets used as data aggregators?",
+      "options": [
+        "Physical power layer",
+        "Sensing layer",
+        "Cloud platform",
+        "Aggregated layer"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The aggregated layer collects data from sensing-layer devices. Smartphones and tablets are given as examples of aggregators.",
+      "source": "See Lecture 58 (Case Study: Healthcare, slide 3)"
+    },
+    {
+      "id": "w12-q10",
+      "week": 12,
+      "number": 10,
+      "type": "MCQ",
+      "question": "Which of the following is an example of preventive care enabled by IoT healthcare?",
+      "options": [
+        "Fall detection for senior citizens",
+        "Disabling emergency alerts",
+        "Removing physiological sensors from patients",
+        "Storing only paper-based medical records"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The lecture presents fall detection, emergency situation detection, and early anomaly detection as examples of preventive care using IoT healthcare.",
+      "source": "See Lecture 58 (Case Study: Healthcare, slide 8)"
+    },
+    {
+      "id": "w12-q11",
+      "week": 12,
+      "number": 11,
+      "type": "MCQ",
+      "question": "What is an advantage of continuous activity monitoring?",
+      "options": [
+        "It requires all sensor data to be discarded immediately",
+        "It prevents any long-term observation",
+        "It enables daily observation of human behavior and repetitive activity patterns",
+        "It can operate only with cameras"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Continuous monitoring helps observe daily behavior over long periods and identify repetitive patterns that can improve the reliability of activity recognition.",
+      "source": "See Lecture 59 (Activity Monitoring - Part I, slide 5)"
+    },
+    {
+      "id": "w12-q12",
+      "week": 12,
+      "number": 12,
+      "type": "MCQ",
+      "question": "Which type of data can be analyzed using the deep-learning-based approach described in the lecture?",
+      "options": [
+        "Sensor data, images, and videos",
+        "Images only",
+        "Text labels only",
+        "Sensor data only and never images or videos"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The lecture states that deep-learning-based analysis can be applied to ordinary sensor data as well as image and video data.",
+      "source": "See Lecture 59 (Activity Monitoring - Part I, slide 8)"
+    },
+    {
+      "id": "w12-q13",
+      "week": 12,
+      "number": 13,
+      "type": "MCQ",
+      "question": "Processing activity-monitoring sensor data directly on the device is referred to as which approach?",
+      "options": [
+        "Data-aggregator selection approach",
+        "Network-only approach",
+        "Cloud replication approach",
+        "In-place approach"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In the in-place approach, activity data are processed on the device itself. This is generally power intensive but does not require a network connection for the processing task.",
+      "source": "See Lecture 59 (Activity Monitoring - Part I, slide 9)"
+    },
+    {
+      "id": "w12-q14",
+      "week": 12,
+      "number": 14,
+      "type": "MCQ",
+      "question": "What are the three basic elements used in the smartphone-based activity-monitoring demonstration?",
+      "options": [
+        "A soil-moisture sensor, a pump, and a paddy field",
+        "A smart meter, a PMU, and a power plant",
+        "A smartphone, a network, and a remote server",
+        "A Hadoop Namenode, Datanode, and Job Tracker"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The demonstration uses a smartphone to generate sensor data, a network to carry the data, and a remote server to receive and process or visualize it.",
+      "source": "See Lecture 60 (Activity Monitoring - Part II)"
+    },
+    {
+      "id": "w12-q15",
+      "week": 12,
+      "number": 15,
+      "type": "MCQ",
+      "question": "Which sensor values are specifically logged in the activity-monitoring demonstration described in the lecture?",
+      "options": [
+        "Accelerometer values",
+        "Soil-moisture values",
+        "Smart-grid voltage phasors",
+        "Water-level values"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "For the demonstration, the smartphone transmits accelerometer readings to the remote server, where the data are continuously logged.",
+      "source": "See Lecture 60 (Activity Monitoring - Part II)"
+    }
+  ]
+}

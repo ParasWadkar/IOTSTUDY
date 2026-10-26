@@ -11,6 +11,8 @@ export interface Question {
   correct: number[];
   explanation: string;
   source: string;
+  /** Optional per-option reasoning (same order/length as `options`), kept in src/data/notes. */
+  optionNotes?: string[];
 }
 
 export interface WeekData {

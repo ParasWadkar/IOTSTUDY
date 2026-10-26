@@ -1,0 +1,92 @@
+{
+ "w12-q1": [
+  "Correct — qualitative analysis handles categorical data.",
+  "Incorrect — quantitative analysis is used for numerical data, not categorical data.",
+  "Incorrect — regression analysis models relationships between numerical variables rather than analyzing categorical data.",
+  "Incorrect — analysis of variance compares means across groups of numerical data; it is not the categorical-data analysis type."
+ ],
+ "w12-q2": [
+  "Correct — a complete statistical model has as many variables as equations; a mismatch makes it incomplete.",
+  "Incorrect — a model with no variables is not complete under this definition, which requires matching counts.",
+  "Incorrect — more variables than equations is a mismatch, which makes the model incomplete.",
+  "Incorrect — completeness depends on matching variables and equations, not on the data being categorical."
+ ],
+ "w12-q3": [
+  "Incorrect — a single observation gives nothing to compare, so ANOVA does not apply.",
+  "Correct — ANOVA is a parametric technique especially useful when comparing more than two populations or samples.",
+  "Incorrect — ANOVA needs a numerical response variable, so non-numerical labels alone do not suit it.",
+  "Incorrect — comparing identical copies would show no variation, so ANOVA has nothing to test."
+ ],
+ "w12-q4": [
+  "Incorrect — the number of equations is a property of a statistical model, not what r measures.",
+  "Incorrect — the maximum value is a simple descriptive statistic, not what correlation measures.",
+  "Correct — Pearson's r measures the strength of association between two quantitative, continuous variables.",
+  "Incorrect — sample size is not measured by r."
+ ],
+ "w12-q5": [
+  "Incorrect — AgriSens provides automatic irrigation and remote monitoring, not manual-only control.",
+  "Incorrect — AgriSens aims at saving water, not using more regardless of soil condition.",
+  "Incorrect — AgriSens depends on sensors in the field to monitor and control irrigation.",
+  "Correct — AgriSens aims at more crop yield with less water, using automatic irrigation and remote monitoring."
+ ],
+ "w12-q6": [
+  "Incorrect — physical, transport and presentation layers are network or OSI-style layers, not the AgriSens layers.",
+  "Correct — the AgriSens architecture has a sensing and actuating layer, a processing, storage and service layer, and an application layer.",
+  "Incorrect — user, billing and routing layers are not the AgriSens architecture layers.",
+  "Incorrect — sensor, firewall and operating-system layers are not the AgriSens architecture layers."
+ ],
+ "w12-q7": [
+  "Incorrect — meter data management belongs to smart grids, not to the AgriSens sensor node.",
+  "Correct — the AgriSens sensor node includes sensors and actuators, processing and memory, wireless communication and a power management unit.",
+  "Incorrect — a phasor measurement unit is a smart grid device, not part of the AgriSens node.",
+  "Incorrect — the Hadoop Namenode belongs to big data storage and is not part of the sensor node."
+ ],
+ "w12-q8": [
+  "Incorrect — the multi-user server is a software and communication element and does not power the nodes.",
+  "Incorrect — soil moisture is measured by sensors in the field, not by the server.",
+  "Correct — the multi-user server sends field information to farmers by SMS and executes their queries and control messages.",
+  "Incorrect — the server does not replace gateways with wired links."
+ ],
+ "w12-q9": [
+  "Incorrect — a physical power layer is not the layer that contains smartphones and tablets as aggregators.",
+  "Incorrect — the sensing layer holds the sensing devices, which feed data to aggregators.",
+  "Incorrect — the cloud platform stores and processes data remotely and is not where phones act as aggregators.",
+  "Correct — the aggregated layer collects data from sensing-layer devices, with smartphones and tablets as example aggregators."
+ ],
+ "w12-q10": [
+  "Correct — fall detection for senior citizens is an example of preventive care using IoT healthcare.",
+  "Incorrect — disabling emergency alerts would work against preventive care, which relies on detecting emergencies.",
+  "Incorrect — removing physiological sensors would remove the data that preventive care depends on.",
+  "Incorrect — paper-based records are not IoT healthcare and do not enable preventive care."
+ ],
+ "w12-q11": [
+  "Incorrect — continuous monitoring keeps sensor data for analysis rather than discarding it.",
+  "Incorrect — continuous monitoring supports long-term observation; it does not prevent it.",
+  "Correct — continuous monitoring enables daily observation of behavior and repetitive patterns, improving activity recognition reliability.",
+  "Incorrect — continuous monitoring can use various sensors, not only cameras."
+ ],
+ "w12-q12": [
+  "Correct — deep-learning-based analysis can be applied to ordinary sensor data as well as image and video data.",
+  "Incorrect — the approach is not limited to images; it also handles sensor data and video.",
+  "Incorrect — the approach is not limited to text labels.",
+  "Incorrect — the approach is not restricted to sensor data; it also works on images and videos."
+ ],
+ "w12-q13": [
+  "Incorrect — data-aggregator selection concerns choosing which node collects data, not processing on the device itself.",
+  "Incorrect — a network-only approach would send data elsewhere for processing rather than process it on the device.",
+  "Incorrect — cloud replication copies data to the cloud and does not describe on-device processing.",
+  "Correct — in the in-place approach, activity data are processed on the device itself, which is power intensive but needs no network."
+ ],
+ "w12-q14": [
+  "Incorrect — soil-moisture sensors, pumps and paddy fields belong to the AgriSens example, not this demonstration.",
+  "Incorrect — smart meters, PMUs and power plants belong to the smart grid topic, not this demonstration.",
+  "Correct — the demonstration uses a smartphone to generate data, a network to carry it and a remote server to receive and process it.",
+  "Incorrect — Hadoop Namenode, Datanode and Job Tracker are big data components, not elements of this demonstration."
+ ],
+ "w12-q15": [
+  "Correct — the smartphone sends accelerometer readings to the remote server, where they are continuously logged.",
+  "Incorrect — soil-moisture values belong to the AgriSens agriculture application, not the activity demonstration.",
+  "Incorrect — voltage phasors are smart grid measurements, not logged by the smartphone demonstration.",
+  "Incorrect — water-level values belong to the irrigation application, not the activity-monitoring demonstration."
+ ]
+}

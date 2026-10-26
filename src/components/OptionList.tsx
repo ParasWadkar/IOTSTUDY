@@ -46,10 +46,23 @@ export default function OptionList({ q, answered, pending = [], reveal, onPick }
               <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-100 text-xs font-semibold uppercase text-slate-600 dark:bg-slate-800 dark:text-slate-300">
                 {'abcd'[i]}
               </span>
-              <span className="flex-1">{opt}</span>
-              {tag && (
-                <span className="mt-0.5 shrink-0 text-xs text-slate-500 dark:text-slate-400">{tag}</span>
-              )}
+              <span className="min-w-0 flex-1">
+                <span className="flex items-start justify-between gap-3">
+                  <span>{opt}</span>
+                  {tag && (
+                    <span className="mt-0.5 shrink-0 text-xs text-slate-500 dark:text-slate-400">{tag}</span>
+                  )}
+                </span>
+                {locked && q.optionNotes?.[i] && (
+                  <span
+                    className={`mt-1.5 block text-sm leading-snug ${
+                      isCorrect ? 'text-green-700 dark:text-green-400' : 'text-red-700 dark:text-red-400'
+                    }`}
+                  >
+                    {q.optionNotes[i]}
+                  </span>
+                )}
+              </span>
             </button>
           </li>
         );

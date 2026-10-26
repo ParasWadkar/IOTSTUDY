@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { allQuestions } from '@/lib/data';
 import { useStore } from '@/lib/store';
 import BookmarkButton from './BookmarkButton';
+import { ChevronLeft } from './icons';
 import OptionList from './OptionList';
 
 export default function Revise() {
@@ -16,41 +17,43 @@ export default function Revise() {
   const i = Math.min(index, Math.max(list.length - 1, 0));
 
   const btn =
-    'min-h-[52px] flex-1 rounded-2xl border border-slate-300 font-medium disabled:opacity-40 hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800';
+    'flex h-12 flex-1 items-center justify-center rounded-xl border border-line-strong bg-surface px-5 text-[15px] font-medium text-ink transition-colors hover:bg-surface-2 active:bg-line disabled:pointer-events-none disabled:opacity-40';
 
   return (
     <div className="animate-fade">
-      <div className="mb-4 flex items-center justify-between">
-        <div className="flex items-center gap-2">
+      <div className="mb-3 flex items-center justify-between">
+        <div className="-ml-2 flex min-w-0 items-center gap-0.5">
           <Link
             href="/"
             aria-label="Home"
-            className="flex h-11 w-11 items-center justify-center rounded-xl text-slate-500 hover:bg-slate-200 dark:text-slate-400 dark:hover:bg-slate-800"
+            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-ink-2 transition-colors hover:bg-surface-2 hover:text-ink active:bg-line"
           >
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M15 18l-6-6 6-6" />
-            </svg>
+            <ChevronLeft />
           </Link>
-          <h1 className="text-lg font-bold">Quick Revision</h1>
+          <h1 className="truncate text-[17px] font-semibold tracking-tight">Quick Revision</h1>
         </div>
         {q && <BookmarkButton saved onClick={() => toggleSaved(q.id)} />}
       </div>
 
       {!ready ? null : !q ? (
-        <p className="py-16 text-center text-slate-500 dark:text-slate-400">
+        <p className="mx-auto max-w-xs py-20 text-center text-[15px] leading-relaxed text-ink-3">
           Nothing saved yet. Bookmark questions while practicing to revise them here.
         </p>
       ) : (
         <>
-          <p className="mb-3 text-sm font-medium text-slate-500 dark:text-slate-400">
-            {i + 1} / {list.length} · Week {q.week} · Q{q.number}
+          <p className="mb-6 text-sm tabular-nums text-ink-3">
+            <b className="font-semibold text-ink">{i + 1}</b>
+            {' / '}
+            {list.length} · Week {q.week} · Q{q.number}
           </p>
           <div key={q.id} className="animate-fade">
-            <h2 className="mb-4 text-lg font-semibold leading-snug">{q.question}</h2>
+            <h2 className="mb-6 max-w-[44rem] text-xl font-semibold leading-[1.45] tracking-tight sm:text-[22px]">{q.question}</h2>
             <OptionList q={q} reveal />
-            <p className="mt-4 leading-relaxed text-slate-700 dark:text-slate-300">{q.explanation}</p>
+            <section className="mt-6 rounded-2xl bg-surface-2 p-5">
+              <p className="text-[15.5px] leading-[1.7] text-ink">{q.explanation}</p>
+            </section>
           </div>
-          <div className="mt-6 flex gap-3">
+          <div className="mt-5 flex gap-3">
             <button className={btn} disabled={i === 0} onClick={() => setIndex(i - 1)}>
               Previous
             </button>

@@ -20,9 +20,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body className="min-h-screen bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
+      <body className="min-h-screen bg-bg text-ink antialiased">
         <StoreProvider>
-          <div className="mx-auto w-full max-w-2xl px-4 pb-16 pt-4">{children}</div>
+          <div className="mx-auto w-full max-w-[40rem] px-4 pb-20 pt-4 sm:px-6 sm:pt-10">{children}</div>
         </StoreProvider>
       </body>
     </html>

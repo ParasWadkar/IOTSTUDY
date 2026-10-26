@@ -11,7 +11,7 @@ export interface Question {
   correct: number[];
   explanation: string;
   source: string;
-  /** Optional option-level explanations taken from the source (same order/length as `options`). */
+  /** Optional option-level explanations (same order/length as `options`), merged from src/data/notes. */
   optionNotes?: string[];
 }
 

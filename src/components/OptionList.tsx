@@ -1,4 +1,5 @@
 import type { Question } from '@/lib/types';
+import { Check, X } from './icons';
 
 interface Props {
   q: Question;
@@ -11,57 +12,70 @@ interface Props {
   onPick?: (i: number) => void;
 }
 
+type OptState = 'idle' | 'selected' | 'correct' | 'incorrect' | 'missed' | 'neutral';
+
+const box: Record<OptState, string> = {
+  idle: 'border-line bg-surface shadow-card hover:border-line-strong hover:bg-surface-2 active:scale-[0.99]',
+  selected: 'border-accent bg-accent-soft ring-1 ring-accent',
+  correct: 'border-ok-line bg-ok-soft',
+  incorrect: 'border-bad-line bg-bad-soft',
+  missed: 'border-dashed border-ok-line bg-surface',
+  neutral: 'border-line bg-surface',
+};
+
+const badge: Record<OptState, string> = {
+  idle: 'bg-surface-2 text-ink-2',
+  selected: 'bg-accent text-accent-ink',
+  correct: 'bg-ok text-surface',
+  incorrect: 'bg-bad text-surface',
+  missed: 'border border-ok text-ok',
+  neutral: 'bg-surface-2 text-ink-3',
+};
+
 export default function OptionList({ q, answered, pending = [], reveal, onPick }: Props) {
   const locked = !!answered || !!reveal;
   return (
-    <ul className="space-y-3">
+    <ul className="space-y-2.5">
       {q.options.map((opt, i) => {
         const isCorrect = q.correct.includes(i);
         const isSel = answered?.includes(i) ?? false;
-        let cls = 'border-slate-200 bg-white hover:border-blue-400 dark:border-slate-700 dark:bg-slate-900';
-        let tag = '';
+        let state: OptState = 'idle';
         if (locked) {
-          if (isCorrect && (isSel || reveal)) {
-            cls = 'border-green-500 bg-green-50 dark:bg-green-950 dark:border-green-500';
-            tag = isSel ? '✓ Correct (your answer)' : '✓ Correct';
-          } else if (isSel && !isCorrect) {
-            cls = 'border-red-500 bg-red-50 dark:bg-red-950 dark:border-red-500';
-            tag = '✗ Incorrect (your answer)';
-          } else if (isCorrect) {
-            cls = 'border-green-500 border-dashed bg-white dark:bg-slate-900';
-            tag = '✓ Correct (not selected)';
-          } else {
-            cls = 'border-slate-200 bg-white opacity-60 dark:border-slate-800 dark:bg-slate-900';
-            tag = '✗ Incorrect';
-          }
+          if (isCorrect && (isSel || reveal)) state = 'correct';
+          else if (isSel && !isCorrect) state = 'incorrect';
+          else if (isCorrect) state = 'missed';
+          else state = 'neutral';
         } else if (pending.includes(i)) {
-          cls = 'border-blue-500 bg-blue-50 dark:bg-blue-950';
+          state = 'selected';
         }
+        const note = locked ? q.optionNotes?.[i] : undefined;
         return (
           <li key={i}>
             <button
               type="button"
               disabled={locked}
               onClick={() => onPick?.(i)}
-              className={`flex min-h-[56px] w-full items-start gap-3 rounded-2xl border-2 px-4 py-3 text-left text-base transition-colors ${cls}`}
+              data-state={state}
+              aria-pressed={q.type === 'MSQ' && !locked ? state === 'selected' : undefined}
+              className={`flex min-h-[56px] w-full items-start gap-3.5 rounded-2xl border px-4 py-3.5 text-left transition-[background-color,border-color,transform] duration-150 disabled:cursor-default ${box[state]}`}
             >
-              <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-100 text-xs font-semibold uppercase text-slate-600 dark:bg-slate-800 dark:text-slate-300">
+              <span className={`mt-px flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-[13px] font-semibold uppercase ${badge[state]}`}>
                 {'abcd'[i]}
               </span>
               <span className="min-w-0 flex-1">
-                <span className="block">{opt}</span>
-                {tag && (
-                  <span className="mt-1 block text-xs font-medium text-slate-500 dark:text-slate-400">{tag}</span>
-                )}
-                {locked && q.optionNotes?.[i] && (
+                <span className={`block text-base leading-relaxed ${state === 'neutral' ? 'text-ink-2' : 'text-ink'}`}>{opt}</span>
+                {locked && (
                   <span
-                    className={`mt-1.5 block text-sm leading-snug ${
-                      isCorrect ? 'text-green-700 dark:text-green-400' : 'text-red-700 dark:text-red-400'
+                    className={`mt-1.5 flex items-center gap-1.5 text-sm font-semibold ${
+                      isCorrect ? 'text-ok' : state === 'incorrect' ? 'text-bad' : 'text-ink-3'
                     }`}
                   >
-                    {q.optionNotes[i]}
+                    {isCorrect ? <Check className="h-4 w-4" /> : <X className="h-4 w-4" />}
+                    {isCorrect ? 'Correct' : 'Incorrect'}
+                    {isSel && <span className="sr-only">, selected</span>}
                   </span>
                 )}
+                {note && <span className="mt-1 block text-sm leading-relaxed text-ink-2">{note}</span>}
               </span>
             </button>
           </li>

@@ -1,0 +1,92 @@
+{
+ "w11-q1": [
+  "Incorrect — one-directional distribution describes the traditional grid, not the smart grid.",
+  "Incorrect — a smart grid automates monitoring and restoration, so they are not always performed manually.",
+  "Correct — a smart grid supports bidirectional energy flows with two-way communication and control.",
+  "Incorrect — a smart grid allows distributed generation, so generation is not restricted to centralized power plants."
+ ],
+ "w11-q2": [
+  "Incorrect — a smart meter measures and communicates consumption; it does not generate electricity.",
+  "Correct — smart meters work digitally and provide the interface for information exchange between the consumer and the energy service provider.",
+  "Incorrect — a smart meter supplies data to energy management but does not replace the home energy management system.",
+  "Incorrect — a smart meter is two-way and exchanges information, unlike a conventional one-way meter."
+ ],
+ "w11-q3": [
+  "Correct — Time-of-Use pricing encourages shifting consumption to off-peak periods, when grid load and energy price are lower.",
+  "Incorrect — on-peak hours have higher grid load and price, so operating appliances then raises cost.",
+  "Incorrect — Time-of-Use pricing is about price differences across the day, not about blackouts.",
+  "Incorrect — Time-of-Use pricing rewards shifting use according to grid load and price, not running at a fixed time."
+ ],
+ "w11-q4": [
+  "Incorrect — reactive power and communication traffic do not determine a net metering bill.",
+  "Incorrect — net metering also counts energy the consumer supplies, so centralized plant output alone does not decide the bill.",
+  "Incorrect — stored battery energy alone does not determine the bill; the grid exchange does.",
+  "Correct — net-metering bills depend on energy received from the grid and excess energy the consumer supplies back to it."
+ ],
+ "w11-q5": [
+  "Correct — a PMU samples voltage and current at its location, and multiple PMUs form a phasor network analyzed by SCADA.",
+  "Incorrect — a DAU collects data from groups of smart meters and is not the voltage and current sampling device.",
+  "Incorrect — a smart appliance controller manages appliances at the consumer side, not transmission system monitoring.",
+  "Incorrect — Universal Power Line Bus is a home power-line communication technology, not a grid monitoring device."
+ ],
+ "w11-q6": [
+  "Incorrect — distribution intelligence relies on smart meters and smart IoT devices rather than preventing their use.",
+  "Correct — distribution intelligence identifies outage sources and supports automated switching and power-flow restoration.",
+  "Incorrect — the smart grid uses two-way communication, so restricting it to one-way is the opposite of the function.",
+  "Incorrect — distribution intelligence includes protecting and controlling feeder lines, not removing that protection."
+ ],
+ "w11-q7": [
+  "Correct — a gateway connects a group of closely located smart meters and links them to the DAUs.",
+  "Incorrect — a gateway does not link power plants directly to home appliances.",
+  "Incorrect — PMUs are transmission monitoring devices and are not connected to plug-in vehicles by a gateway.",
+  "Incorrect — renewable generators still need intermediate communication; a gateway does not bypass it to SCADA."
+ ],
+ "w11-q8": [
+  "Incorrect — net metering is a billing scheme, not a type of attack.",
+  "Incorrect — time synchronization attacks target timing information and are not the attack on availability.",
+  "Incorrect — data visualization attack is not the availability-compromising attack named in the lecture.",
+  "Correct — Denial of Service attacks compromise availability by making components or information inaccessible when needed."
+ ],
+ "w11-q9": [
+  "Correct — IIoT applies IoT to industrial systems, linking automation with enterprise functions, planning and product lifecycle.",
+  "Incorrect — IIoT targets industrial settings, not consumer home entertainment.",
+  "Incorrect — IIoT builds on industrial automation by networking it, rather than replacing it without networking.",
+  "Incorrect — IIoT involves machine-to-machine communication as well as data handling, not storage alone."
+ ],
+ "w11-q10": [
+  "Incorrect — disconnect and isolate would keep existing assets out of the network, the opposite of IIoT integration.",
+  "Incorrect — IIoT follows 'wrap and re-use' rather than 'rip and replace'.",
+  "Correct — IIoT is based on a 'wrap and re-use' approach, integrating existing industrial assets.",
+  "Incorrect — remove and discard is not the approach; IIoT aims to reuse existing industrial systems."
+ ],
+ "w11-q11": [
+  "Incorrect — Universal Power Line Bus is a home power-line control technology, not a vehicular communication enabler.",
+  "Incorrect — HDFS is a big data storage file system, unrelated to V2V and V2R communication.",
+  "Incorrect — SCADA is an industrial supervisory and control system, not the vehicular communication technology.",
+  "Correct — DSRC is the key enabling technology for V2V and V2R communications in Intelligent Transportation Systems."
+ ],
+ "w11-q12": [
+  "Correct — wireless sensor networks can monitor air quality, poisonous gases and oxygen levels for mining safety.",
+  "Incorrect — billing amounts of workers are not environmental parameters sensed in mines.",
+  "Incorrect — equipment color is not an environmental parameter and is not monitored for safety.",
+  "Incorrect — browsing history is not an environmental parameter and has no role in mining safety monitoring."
+ ],
+ "w11-q13": [
+  "Incorrect — value refers to the worth that can be derived from data, not to its biases and noise.",
+  "Incorrect — variability refers to changes in data flow or meaning over time, not to noise and bias.",
+  "Correct — veracity concerns biases, noise and abnormality in data, which matters for automated decision-making and machine learning.",
+  "Incorrect — volume refers to the sheer amount of data, not its quality."
+ ],
+ "w11-q14": [
+  "Incorrect — redundancy mitigation removes repeated data; it does not stop data collection.",
+  "Incorrect — duplicating items would add redundancy, which is the opposite of mitigation.",
+  "Incorrect — redundancy mitigation is unrelated to converting structured data into images.",
+  "Correct — redundancy mitigation eliminates repeated data through detection, filtering and compression, reducing needless transmission and storage."
+ ],
+ "w11-q15": [
+  "Correct — Datanodes store the actual data blocks, which HDFS replicates across Datanodes.",
+  "Incorrect — the Namenode maintains filesystem metadata, not the data blocks themselves.",
+  "Incorrect — the Job Tracker schedules and tracks MapReduce jobs; it does not store HDFS blocks.",
+  "Incorrect — YARN manages cluster resources and does not store HDFS data blocks."
+ ]
+}

@@ -64,12 +64,12 @@ export default function Quiz({ id }: { id: string }) {
       </div>
       <button
         onClick={() => {
-          const cur = order[index];
-          const rest = shuffle(order.filter((x) => x !== cur));
-          rest.splice(index, 0, cur);
-          setOrder(rest);
+          // Keep everything already done (and an answered current question) in place; shuffle only what's ahead.
+          const keep = session[order[index]] ? index + 1 : index;
+          setOrder([...order.slice(0, keep), ...shuffle(order.slice(keep))]);
+          setPending([]);
         }}
-        disabled={order.length < 2}
+        disabled={order.length - (session[order[index]] ? index + 1 : index) < 2}
         className="flex h-11 items-center gap-2 rounded-xl px-3 text-sm font-medium text-slate-700 hover:bg-slate-200 disabled:opacity-40 dark:text-slate-200 dark:hover:bg-slate-800"
       >
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

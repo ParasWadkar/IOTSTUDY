@@ -1,7 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { allQuestions, weeks } from '@/lib/data';
+import { useState } from 'react';
+import { allQuestions, questionById, weeks } from '@/lib/data';
 import { useStore } from '@/lib/store';
 import type { Question } from '@/lib/types';
 import ThemeToggle from './ThemeToggle';
@@ -74,10 +75,48 @@ function Card({
   );
 }
 
+function ResetProgress() {
+  const { resetProgress } = useStore();
+  const [open, setOpen] = useState(false);
+  const btn = 'min-h-[48px] w-full rounded-2xl border px-4 font-medium';
+  if (!open) {
+    return (
+      <button
+        onClick={() => setOpen(true)}
+        className="min-h-[48px] rounded-xl px-3 text-sm font-medium text-slate-500 hover:bg-slate-200 dark:text-slate-400 dark:hover:bg-slate-800"
+      >
+        Reset progress
+      </button>
+    );
+  }
+  return (
+    <div className="rounded-2xl border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-slate-900">
+      <p className="mb-3 text-sm">Clear all answers and progress? Saved questions are kept unless you choose otherwise.</p>
+      <div className="flex flex-col gap-2">
+        <button
+          onClick={() => { resetProgress(false); setOpen(false); }}
+          className={`${btn} border-red-500 bg-red-600 text-white hover:bg-red-700`}
+        >
+          Reset progress
+        </button>
+        <button
+          onClick={() => { resetProgress(true); setOpen(false); }}
+          className={`${btn} border-red-500 text-red-600 dark:text-red-400`}
+        >
+          Reset progress and saved questions
+        </button>
+        <button onClick={() => setOpen(false)} className={`${btn} border-slate-300 dark:border-slate-700`}>
+          Cancel
+        </button>
+      </div>
+    </div>
+  );
+}
+
 export default function Home() {
   const { state } = useStore();
   const wrongCount = allQuestions.filter((q) => state.answers[q.id] && !state.answers[q.id].correct).length;
-  const savedCount = state.saved.length;
+  const savedCount = state.saved.filter((id) => questionById[id]).length;
 
   const pill =
     'flex min-h-[56px] flex-1 flex-col items-center justify-center rounded-2xl border border-slate-200 bg-white px-2 py-2 text-center text-sm font-medium shadow-sm active:scale-[0.99] hover:border-blue-400 dark:border-slate-800 dark:bg-slate-900';
@@ -119,6 +158,11 @@ export default function Home() {
           <span className="text-xs font-normal text-slate-500 dark:text-slate-400">saved</span>
         </Link>
       </div>
+
+      <h2 className="mb-2 mt-8 text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+        Settings
+      </h2>
+      <ResetProgress />
     </div>
   );
 }

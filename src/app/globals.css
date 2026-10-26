@@ -6,6 +6,10 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
+body {
+  overflow-wrap: anywhere;
+}
+
 button:focus-visible,
 a:focus-visible {
   outline: 2px solid #3b82f6;

@@ -225,7 +225,7 @@
       "id": "w1-q13",
       "week": 1,
       "number": 13,
-      "type": "MCQ",
+      "type": "TF",
       "question": "State True or False A hydraulic actuator can produce considerable force because liquids are nearly incompressible.",
       "options": [
         "False",

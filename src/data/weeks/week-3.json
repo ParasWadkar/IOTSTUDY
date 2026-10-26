@@ -162,7 +162,7 @@
       "id": "w3-q10",
       "week": 3,
       "number": 10,
-      "type": "MCQ",
+      "type": "TF",
       "question": "State true of false. Bluetooth technology is based on Ad-hoc network technology.",
       "options": [
         "False",

@@ -23,13 +23,13 @@ export default function OptionList({ q, answered, pending = [], reveal, onPick }
         if (locked) {
           if (isCorrect && (isSel || reveal)) {
             cls = 'border-green-500 bg-green-50 dark:bg-green-950 dark:border-green-500';
-            tag = '✓ Correct';
+            tag = isSel ? '✓ Correct (your answer)' : '✓ Correct';
           } else if (isSel && !isCorrect) {
             cls = 'border-red-500 bg-red-50 dark:bg-red-950 dark:border-red-500';
             tag = '✗ Incorrect (your answer)';
           } else if (isCorrect) {
             cls = 'border-green-500 border-dashed bg-white dark:bg-slate-900';
-            tag = '✓ Correct answer';
+            tag = '✓ Correct (not selected)';
           } else {
             cls = 'border-slate-200 bg-white opacity-60 dark:border-slate-800 dark:bg-slate-900';
             tag = '✗ Incorrect';
@@ -49,12 +49,10 @@ export default function OptionList({ q, answered, pending = [], reveal, onPick }
                 {'abcd'[i]}
               </span>
               <span className="min-w-0 flex-1">
-                <span className="flex items-start justify-between gap-3">
-                  <span>{opt}</span>
-                  {tag && (
-                    <span className="mt-0.5 shrink-0 text-xs text-slate-500 dark:text-slate-400">{tag}</span>
-                  )}
-                </span>
+                <span className="block">{opt}</span>
+                {tag && (
+                  <span className="mt-1 block text-xs font-medium text-slate-500 dark:text-slate-400">{tag}</span>
+                )}
                 {locked && q.optionNotes?.[i] && (
                   <span
                     className={`mt-1.5 block text-sm leading-snug ${

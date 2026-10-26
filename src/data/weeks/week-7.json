@@ -78,7 +78,7 @@
       "id": "w7-q5",
       "week": 7,
       "number": 5,
-      "type": "MCQ",
+      "type": "TF",
       "question": "State whether the following statement is True or False. Statement: Matplotlib Python library is used to plot the temperature and humidity data received at the server in the lecture.",
       "options": [
         "False",

@@ -11,7 +11,7 @@ export interface Question {
   correct: number[];
   explanation: string;
   source: string;
-  /** Optional per-option reasoning (same order/length as `options`), kept in src/data/notes. */
+  /** Optional option-level explanations taken from the source (same order/length as `options`). */
   optionNotes?: string[];
 }
 

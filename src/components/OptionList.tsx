@@ -23,14 +23,16 @@ export default function OptionList({ q, answered, pending = [], reveal, onPick }
         if (locked) {
           if (isCorrect && (isSel || reveal)) {
             cls = 'border-green-500 bg-green-50 dark:bg-green-950 dark:border-green-500';
+            tag = '✓ Correct';
           } else if (isSel && !isCorrect) {
             cls = 'border-red-500 bg-red-50 dark:bg-red-950 dark:border-red-500';
-            tag = 'Your answer';
+            tag = '✗ Incorrect (your answer)';
           } else if (isCorrect) {
             cls = 'border-green-500 border-dashed bg-white dark:bg-slate-900';
-            tag = 'Correct answer';
+            tag = '✓ Correct answer';
           } else {
             cls = 'border-slate-200 bg-white opacity-60 dark:border-slate-800 dark:bg-slate-900';
+            tag = '✗ Incorrect';
           }
         } else if (pending.includes(i)) {
           cls = 'border-blue-500 bg-blue-50 dark:bg-blue-950';

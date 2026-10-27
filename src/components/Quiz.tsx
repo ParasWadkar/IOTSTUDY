@@ -6,8 +6,8 @@ import { modeTitle, poolFor, questionById, shuffle } from '@/lib/data';
 import { useStore } from '@/lib/store';
 import type { Answer } from '@/lib/types';
 import BookmarkButton from './BookmarkButton';
-import { Check, ChevronLeft, Shuffle, X } from './icons';
-import NextButton from './NextButton';
+import FloatingAction from './FloatingAction';
+import { ArrowRight, Check, ChevronLeft, Shuffle, X } from './icons';
 import OptionList from './OptionList';
 
 const typeLabel = { MCQ: 'Single choice', MSQ: 'Select all that apply', TF: 'True / False' } as const;
@@ -199,9 +199,13 @@ export default function Quiz({ id }: { id: string }) {
         <OptionList q={q} answered={ans?.selected} pending={pending} onPick={pick} />
 
         {!ans && q.type === 'MSQ' && (
-          <button onClick={() => submit(pending)} disabled={pending.length === 0} className={`${primaryBtn} mt-5`}>
-            Check answer
-          </button>
+          <FloatingAction
+            onClick={() => submit(pending)}
+            disabled={pending.length === 0}
+            label="Check answer"
+            icon={(c) => <Check className={c} />}
+            className={`${primaryBtn} mt-5`}
+          />
         )}
 
         {ans && (
@@ -216,7 +220,12 @@ export default function Quiz({ id }: { id: string }) {
         )}
 
         {ans && (
-          <NextButton onClick={next} label={isLast ? 'Finish' : 'Next'} className={`${primaryBtn} mt-4`} />
+          <FloatingAction
+            onClick={next}
+            label={isLast ? 'Finish' : 'Next'}
+            icon={(c) => <ArrowRight className={c} />}
+            className={`${primaryBtn} mt-4`}
+          />
         )}
       </div>
     </div>

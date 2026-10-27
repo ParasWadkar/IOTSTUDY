@@ -1,0 +1,90 @@
+{
+ "w7-q1": [
+  "Incorrect — SOCK_STREAM is a TCP stream socket; the client here sends readings as datagrams instead.",
+  "Correct — The client creates a UDP socket with SOCK_DGRAM to send the sensor readings to the server.",
+  "Incorrect — SOCK_RAW gives direct access to raw IP packets; it is not what the logging client uses.",
+  "Incorrect — SOCK_SEQPACKET is a sequenced, connection-oriented packet socket type, not the UDP socket used here."
+ ],
+ "w7-q2": [
+  "Correct — The sensordata() function calls read_retry, which returns the humidity and temperature values from the DHT sensor.",
+  "Incorrect — get_data() is not the Adafruit DHT call used in the client code.",
+  "Incorrect — sense() is not the Adafruit DHT call used in the client code.",
+  "Incorrect — capture() is not the Adafruit DHT call used in the client code."
+ ],
+ "w7-q3": [
+  "Incorrect — The server appends to a plain file, not a MySQL database.",
+  "Correct — The server opens Datalog.txt in append mode and writes each message received from the client into it.",
+  "Incorrect — The server does not push data to a cloud dashboard; it writes to a local file.",
+  "Incorrect — The data goes to a text file, not an Excel spreadsheet."
+ ],
+ "w7-q4": [
+  "Correct — split() breaks a string at a delimiter, so Data.split(\",\") separates the comma-separated sensor values.",
+  "Incorrect — divide() is not a standard Python string method for splitting text.",
+  "Incorrect — partition() splits only at the first separator into three parts, so it does not give all comma-separated values.",
+  "Incorrect — separate() is not a Python string method."
+ ],
+ "w7-q5": [
+  "Incorrect — The statement is true, so False is wrong; Matplotlib is used to plot the received data.",
+  "Correct — True; Matplotlib creates 2D plots, using plot(), xlabel(), ylabel() and title() to plot and label the sensor data."
+ ],
+ "w7-q6": [
+  "Correct — ion() turns on matplotlib interactive mode so the plot updates as new data arrives.",
+  "Incorrect — grid() only adds grid lines to a plot; it does not enable interactive mode.",
+  "Incorrect — subplot() arranges multiple plots in one figure; it does not turn on interactive mode.",
+  "Incorrect — figure() creates a new figure window; it does not enable interactive mode."
+ ],
+ "w7-q7": [
+  "Incorrect — In a traditional network control is distributed, not held by a centralized controller; that is the SDN approach.",
+  "Correct — Protocols like OSPF execute at the individual switches, which forward traffic in a distributed manner without central control.",
+  "Incorrect — End-user devices do not run the network's routing protocol logic.",
+  "Incorrect — Routing protocols run on network devices, not in the cloud."
+ ],
+ "w7-q8": [
+  "Incorrect — 2006 is not the year OpenFlow was presented at ACM SIGCOMM.",
+  "Correct — OpenFlow, the origin of the SDN idea, was presented at ACM SIGCOMM in 2008.",
+  "Incorrect — 2009 is when the OpenFlow V1.0.0 specification was published, a year after the SIGCOMM presentation.",
+  "Incorrect — 2011 is not the year OpenFlow was presented at ACM SIGCOMM."
+ ],
+ "w7-q9": [
+  "Correct — With no matching flow-rule, the switch sends a PACKET-IN message to the controller, which then installs a suitable rule.",
+  "Incorrect — FLOW-REQUEST is not the OpenFlow message a switch sends on a table miss.",
+  "Incorrect — RULE-MISS alert is not an OpenFlow message; the switch uses PACKET-IN.",
+  "Incorrect — CONTROL-SYNC is not the message a switch sends for an unmatched packet."
+ ],
+ "w7-q10": [
+  "Incorrect — The Northbound API connects the control layer to the application layer, not to the infrastructure layer.",
+  "Correct — The Southbound API links the control layer and the infrastructure layer, using the OpenFlow protocol.",
+  "Incorrect — East-Westbound APIs relate to communication between controllers, not control-to-infrastructure communication.",
+  "Incorrect — North-Southbound API is not the standard name for the control-to-infrastructure interface."
+ ],
+ "w7-q11": [
+  "Incorrect — 50 requests per second is not the figure stated for a single-thread controller.",
+  "Incorrect — 100 requests per second is not the figure stated for a single-thread controller.",
+  "Correct — The lecture states a controller typically handles around 200 requests per second through a single thread.",
+  "Incorrect — 500 requests per second is not the figure stated for a single-thread controller."
+ ],
+ "w7-q12": [
+  "Incorrect — Distributed control spreads decisions across multiple controllers, each controlling a subnetwork.",
+  "Correct — In centralized control, all control decisions are taken by a single controller.",
+  "Incorrect — Hierarchical control arranges multiple controllers in levels, so it is not a single-controller scheme.",
+  "Incorrect — Federated control involves multiple cooperating controllers, not one controller for the whole network."
+ ],
+ "w7-q13": [
+  "Incorrect — Increased hardware cost is a drawback, not a listed benefit of SDN in IoT.",
+  "Correct — Visibility of network resources is a listed benefit of integrating SDN with IoT.",
+  "Incorrect — Reduced sensor accuracy is not a benefit of SDN integration.",
+  "Incorrect — SDN relies on controllers; it does not eliminate them, and this is not a listed benefit."
+ ],
+ "w7-q14": [
+  "Incorrect — Wireless sensor networks are resource constrained, so excess bandwidth is not the challenge.",
+  "Correct — Limited memory means too many control programs cannot be inserted into sensor nodes, motivating software-defined WSN.",
+  "Incorrect — Too many controllers is not the stated sensor-node constraint.",
+  "Incorrect — Sensor nodes cannot perform heavy computation, so unlimited computation power is the opposite of the challenge."
+ ],
+ "w7-q15": [
+  "Incorrect — Integrated Node Path Protocol is not what INPP stands for.",
+  "Incorrect — Internal Node Power Processing is not what INPP stands for.",
+  "Correct — In the SDN-WISE protocol stack, INPP stands for In Network Packet Processing.",
+  "Incorrect — IoT Network Priority Protocol is not what INPP stands for."
+ ]
+}

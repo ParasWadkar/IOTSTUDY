@@ -1,0 +1,286 @@
+{
+  "week": 2,
+  "title": "Week 2",
+  "questions": [
+    {
+      "id": "w2-q1",
+      "week": 2,
+      "number": 1,
+      "type": "MCQ",
+      "question": "In MQTT, which field of a published message is used by the broker as routing information?",
+      "options": [
+        "Topic",
+        "Client identifier",
+        "Payload length",
+        "Session timer"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The MQTT broker dispatches messages between senders and receivers. The topic included in a published message provides the routing information that the broker uses to deliver the message to clients subscribed to the matching topic.",
+      "source": "Answer Location: Week 2, Module 6 (Basics of IoT Networking - Part II) @ 08:27"
+    },
+    {
+      "id": "w2-q2",
+      "week": 2,
+      "number": 2,
+      "type": "MSQ",
+      "question": "Which of the following statements about MQTT topic wildcards are correct?",
+      "options": [
+        "The plus sign (+) matches an arbitrary value at exactly one hierarchy level.",
+        "The hash sign (#) can be used to subscribe to all underlying hierarchy levels.",
+        "The subscription house/# matches only the exact topic house.",
+        "The subscription house/+/temperature can match house/kitchen/temperature."
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "The plus sign (+) is a single-level wildcard, whereas the hash sign (#) is a multilevel wildcard. Thus, house/+/temperature can match house/kitchen/temperature, and house/# matches all topics whose hierarchy begins with house, not only the exact topic house.",
+      "source": "Answer Location: Week 2, Module 6 (Basics of IoT Networking - Part II) @ 12:01"
+    },
+    {
+      "id": "w2-q3",
+      "week": 2,
+      "number": 3,
+      "type": "MSQ",
+      "question": "Which of the following are main stages of Secure MQTT (SMQTT)?",
+      "options": [
+        "Setup",
+        "Publish",
+        "Decryption",
+        "Route discovery"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "SMQTT consists of four main stages: setup, encryption, publish, and decryption. Route discovery is not one of the SMQTT stages.",
+      "source": "Answer Location: Week 2, Module 6 (Basics of IoT Networking - Part II) @ 13:45"
+    },
+    {
+      "id": "w2-q4",
+      "week": 2,
+      "number": 4,
+      "type": "MCQ",
+      "question": "At the transport layer, CoAP (Constrained Application Protocol) operates over which protocol?",
+      "options": [
+        "TCP",
+        "UDP",
+        "SCTP",
+        "FTP"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "CoAP is designed for constrained environments and operates over UDP at the transport layer. Its lightweight design helps reduce communication overhead for resource-constrained IoT devices.",
+      "source": "Answer Location: Week 2, Module 7 (Basics of IoT Networking - Part III) @ 05:41"
+    },
+    {
+      "id": "w2-q5",
+      "week": 2,
+      "number": 5,
+      "type": "TF",
+      "question": "State True or False. In CoAP, a piggyback response is carried with the acknowledgment, whereas in the separate mode, the server response is sent in a message separate from the acknowledgment.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "In the piggyback mode, the server places its response in the acknowledgment message. In the separate mode, the acknowledgment is sent first and the response is transmitted later as a separate message.",
+      "source": "Answer Location: Week 2, Module 7 (Basics of IoT Networking - Part III) @ 07:48"
+    },
+    {
+      "id": "w2-q6",
+      "week": 2,
+      "number": 6,
+      "type": "MSQ",
+      "question": "Which of the following CoAP request-method mappings are correct?",
+      "options": [
+        "GET - retrieve data",
+        "PUT - create data",
+        "PUSH - update data",
+        "DELETE - delete data"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "As presented in the lecture, CoAP uses GET, PUT, PUSH, and DELETE requests to retrieve, create, update, and delete data, respectively.",
+      "source": "Answer Location: Week 2, Module 7 (Basics of IoT Networking - Part III) @ 07:48"
+    },
+    {
+      "id": "w2-q7",
+      "week": 2,
+      "number": 7,
+      "type": "MCQ",
+      "question": "Which AMQP frame type is used to control the message-flow rate?",
+      "options": [
+        "Transfer",
+        "Detach",
+        "Disposition",
+        "Flow"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Flow frame controls the rate of message flow between AMQP peers. By comparison, Transfer carries messages, Disposition communicates a change in transfer state, and Detach terminates a link.",
+      "source": "Answer Location: Week 2, Module 8 (Basics of IoT Networking - Part IV) @ 06:21"
+    },
+    {
+      "id": "w2-q8",
+      "week": 2,
+      "number": 8,
+      "type": "MSQ",
+      "question": "Which of the following statements about AMQP components are correct?",
+      "options": [
+        "An exchange receives messages and routes them to queues.",
+        "A queue stores messages for business processes or consumers.",
+        "A binding specifies message-distribution rules between an exchange and queues.",
+        "A consumer must route every producer message before it reaches an exchange."
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "The main AMQP components discussed in the lecture are exchanges, queues, and bindings. An exchange receives and routes messages, a queue stores messages for consumers or business processes, and a binding defines the distribution rules connecting exchanges to queues.",
+      "source": "Answer Location: Week 2, Module 8 (Basics of IoT Networking - Part IV) @ 08:03"
+    },
+    {
+      "id": "w2-q9",
+      "week": 2,
+      "number": 9,
+      "type": "MSQ",
+      "question": "Which of the following IEEE 802.15.4 variant-application pairs are correct?",
+      "options": [
+        "IEEE 802.15.4c - China",
+        "IEEE 802.15.4e - Industrial applications",
+        "IEEE 802.15.4f - Active RFID",
+        "IEEE 802.15.4g - Smart utility networks"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "The lecture associates IEEE 802.15.4c with China, 802.15.4d with Japan, 802.15.4e with industrial applications, 802.15.4f with active RFID, and 802.15.4g with smart utility networks.",
+      "source": "Answer Location: Week 2, Module 9 (Connectivity Technologies - Part I) @ 09:03"
+    },
+    {
+      "id": "w2-q10",
+      "week": 2,
+      "number": 10,
+      "type": "MCQ",
+      "question": "In a non-beacon-enabled IEEE 802.15.4 network, data frames are transmitted using:",
+      "options": [
+        "Slotted CSMA/CA",
+        "Unslotted CSMA/CA",
+        "Token passing",
+        "Pure TDMA only"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Non-beacon-enabled IEEE 802.15.4 networks transmit data frames using unslotted CSMA/CA. In contrast, beacon-enabled networks use slotted CSMA/CA with a superframe structure managed by the PAN coordinator.",
+      "source": "Answer Location: Week 2, Module 9 (Connectivity Technologies - Part I) @ 14:11"
+    },
+    {
+      "id": "w2-q11",
+      "week": 2,
+      "number": 11,
+      "type": "MCQ",
+      "question": "Which statement correctly describes the relationship between IEEE 802.15.4 and ZigBee?",
+      "options": [
+        "IEEE 802.15.4 provides layers 1 and 2, while ZigBee extends the functionality to layer 3 and above.",
+        "ZigBee provides only the physical layer, while IEEE 802.15.4 provides all higher layers.",
+        "Both standards operate only at the application layer.",
+        "ZigBee and IEEE 802.15.4 are identical standards with no functional distinction."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "IEEE 802.15.4 primarily specifies the physical and MAC layers. ZigBee operates on top of these layers and adds higher-layer functions, including authentication, encryption, routing, forwarding, and support for mesh networking.",
+      "source": "Answer Location: Week 2, Module 9 (Connectivity Technologies - Part I) @ 16:08"
+    },
+    {
+      "id": "w2-q12",
+      "week": 2,
+      "number": 12,
+      "type": "MSQ",
+      "question": "Which of the following statements characterizes a ZigBee end device?",
+      "options": [
+        "It communicates with its parent node.",
+        "It cannot relay data for other devices.",
+        "It is a reduced-functionality device.",
+        "It forms the network root and acts as the trust center."
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "A ZigBee end device has sufficient functionality to communicate with its parent, but it cannot relay data for other devices. It is therefore a reduced-functionality device. The coordinator, not an end device, forms the network root and may act as the trust center.",
+      "source": "Answer Location: Week 2, Module 9 (Connectivity Technologies - Part I) @ 23:54"
+    },
+    {
+      "id": "w2-q13",
+      "week": 2,
+      "number": 13,
+      "type": "MCQ",
+      "question": "Which option correctly describes addressing in 6LoWPAN?",
+      "options": [
+        "A 16-bit address is globally unique, while a 64-bit address is PAN-specific.",
+        "A 16-bit short address is PAN-specific and assigned by the PAN coordinator, while a 64-bit extended address is globally unique.",
+        "Both 16-bit and 64-bit addresses are globally unique and assigned by an Internet router.",
+        "Both address types are used only for multicast communication."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "6LoWPAN supports 16-bit short addresses for PAN-specific communication; these are assigned by the PAN coordinator. It also supports 64-bit extended addresses, which are globally unique.",
+      "source": "Answer Location: Week 2, Module 10 (Connectivity Technologies - Part II) @ 04:58"
+    },
+    {
+      "id": "w2-q14",
+      "week": 2,
+      "number": 14,
+      "type": "TF",
+      "question": "State True or False. In LOADng routing, an intermediate router may respond to a Route Request (RREQ) whenever it already has an active route to the requested destination.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In LOADng, only the destination is permitted to respond to an RREQ. Intermediate LOADng routers are explicitly prohibited from responding, even when they have an active route to the requested destination.",
+      "source": "Answer Location: Week 2, Module 10 (Connectivity Technologies - Part II) @ 12:48"
+    },
+    {
+      "id": "w2-q15",
+      "week": 2,
+      "number": 15,
+      "type": "MCQ",
+      "question": "How does a passive RFID tag obtain the power required to transmit information?",
+      "options": [
+        "It uses its own internal battery.",
+        "It is powered inductively by an RFID reader.",
+        "It receives power through a wired AIDC connection.",
+        "It does not require any source of power."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Passive RFID tags do not have their own power supply. They must first be powered inductively by an RFID reader before they can transmit information. Active RFID tags, in contrast, have their own power supply.",
+      "source": "Answer Location: Week 2, Module 10 (Connectivity Technologies - Part II) @ 19:30"
+    }
+  ]
+}

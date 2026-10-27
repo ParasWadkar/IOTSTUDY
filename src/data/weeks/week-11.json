@@ -1,0 +1,276 @@
+{
+  "week": 11,
+  "title": "Week 11",
+  "questions": [
+    {
+      "id": "w11-q1",
+      "week": 11,
+      "number": 1,
+      "type": "MCQ",
+      "question": "According to the lecture, which feature distinguishes a smart grid from a traditional electrical grid?",
+      "options": [
+        "Energy distribution is only one directional.",
+        "Monitoring and restoration are always performed manually.",
+        "It enables bidirectional flows of energy with two-way communication and control.",
+        "Energy generation must occur only at centralized power plants."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The lecture describes a smart grid as a modernized grid that supports bidirectional energy flow and two-way communication and control, unlike the traditional grid's one-directional operation.",
+      "source": "See Lecture 51 (Smart Grid - Part I, slide 3)"
+    },
+    {
+      "id": "w11-q2",
+      "week": 11,
+      "number": 2,
+      "type": "MCQ",
+      "question": "What is the role of a smart meter in a smart home?",
+      "options": [
+        "It generates electricity from renewable energy sources.",
+        "It provides the Smart Grid interface between the consumer and the energy service provider.",
+        "It replaces the home energy management system.",
+        "It operates only as a one-way energy meter without information exchange."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Smart meters operate digitally and provide the interface for automated information exchange between the consumer side and the energy service provider.",
+      "source": "See Lecture 51 (Smart Grid - Part I, slide 14)"
+    },
+    {
+      "id": "w11-q3",
+      "week": 11,
+      "number": 3,
+      "type": "MCQ",
+      "question": "Under Time-of-Use pricing, when are consumers encouraged to operate smart appliances to reduce their energy cost?",
+      "options": [
+        "During off-peak hours.",
+        "Only during on-peak hours.",
+        "Only when the grid has a blackout.",
+        "At a fixed time independent of the grid load."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Time-of-Use pricing encourages consumers to shift energy consumption to off-peak periods, when grid load is lower and the price of energy is lower.",
+      "source": "See Lecture 51 (Smart Grid - Part I, slide 20)"
+    },
+    {
+      "id": "w11-q4",
+      "week": 11,
+      "number": 4,
+      "type": "MCQ",
+      "question": "In net metering, the consumer's final bill depends on which two energy flows?",
+      "options": [
+        "Reactive power and communication traffic.",
+        "Only the energy generated at centralized power plants.",
+        "Only the energy stored in the consumer's battery.",
+        "Energy inflow from the grid and energy outflow from the consumer to the grid."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The lecture states that net-metering bills depend on both the energy received by the consumer from the grid and the excess energy supplied by the consumer back to the grid.",
+      "source": "See Lecture 51 (Smart Grid - Part I, slide 21)"
+    },
+    {
+      "id": "w11-q5",
+      "week": 11,
+      "number": 5,
+      "type": "MCQ",
+      "question": "Which device is used in a smart grid operation center to sample voltage and current for monitoring the transmission system?",
+      "options": [
+        "Phasor Measurement Unit (PMU).",
+        "Data Aggregator Unit (DAU).",
+        "Smart appliance controller.",
+        "Universal Power Line Bus."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A PMU samples voltage and current at its installed location. Multiple PMUs form a phasor network whose information can be analyzed by a centralized SCADA system.",
+      "source": "See Lecture 52 (Smart Grid - Part II, slide 3)"
+    },
+    {
+      "id": "w11-q6",
+      "week": 11,
+      "number": 6,
+      "type": "MCQ",
+      "question": "Which of the following is a function of distribution intelligence in the smart grid?",
+      "options": [
+        "Preventing all use of smart meters.",
+        "Identifying the source of a power outage and supporting automatic power-flow restoration.",
+        "Restricting the grid to one-way communication.",
+        "Removing protection and control from feeder lines."
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Distribution intelligence uses smart IoT devices and smart meters to identify outage sources, support automated switching, optimize real and reactive power, and protect feeder lines.",
+      "source": "See Lecture 52 (Smart Grid - Part II, slide 5)"
+    },
+    {
+      "id": "w11-q7",
+      "week": 11,
+      "number": 7,
+      "type": "MCQ",
+      "question": "In smart grid communication, what does a gateway connect?",
+      "options": [
+        "Closely located smart meters to Data Aggregator Units (DAUs).",
+        "Only power plants directly to home appliances.",
+        "PMUs directly to plug-in electric vehicles.",
+        "Renewable generators directly to SCADA without intermediate communication."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The lecture explains that a gateway connects a group of closely located smart meters and acts as the communication link between those smart meters and the DAUs.",
+      "source": "See Lecture 52 (Smart Grid - Part II, slide 11)"
+    },
+    {
+      "id": "w11-q8",
+      "week": 11,
+      "number": 8,
+      "type": "MCQ",
+      "question": "Which type of attack compromises the availability of smart grid components or information by making them inaccessible when needed?",
+      "options": [
+        "Net metering attack.",
+        "Time synchronization attack.",
+        "Data visualization attack.",
+        "Denial of Service (DoS) attack."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The lecture identifies attacks that compromise availability as Denial of Service attacks. Such attacks may block key signals and affect grid stability and observability.",
+      "source": "See Lecture 52 (Smart Grid - Part II, slide 17)"
+    },
+    {
+      "id": "w11-q9",
+      "week": 11,
+      "number": 9,
+      "type": "MCQ",
+      "question": "How is the Industrial Internet of Things (IIoT) described in the lecture?",
+      "options": [
+        "An application of IoT in industries that links automation systems with enterprise, planning, and product lifecycle.",
+        "A consumer-only network for home entertainment devices.",
+        "A replacement for all industrial automation without networking.",
+        "A system used only for storing data without machine communication."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "IIoT applies IoT concepts to industrial systems and connects automation with enterprise functions, planning, and product lifecycle activities.",
+      "source": "See Lecture 53 (Industrial Internet of Things - Part I, slide 3)"
+    },
+    {
+      "id": "w11-q10",
+      "week": 11,
+      "number": 10,
+      "type": "MCQ",
+      "question": "Which approach does the lecture associate with IIoT for adapting existing industrial systems?",
+      "options": [
+        "Disconnect and isolate.",
+        "Rip and replace.",
+        "Wrap and re-use.",
+        "Remove and discard."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The lecture states that IIoT is based on a 'wrap and re-use' approach rather than a 'rip and replace' approach, allowing existing industrial assets to be integrated.",
+      "source": "See Lecture 53 (Industrial Internet of Things - Part I, slide 6)"
+    },
+    {
+      "id": "w11-q11",
+      "week": 11,
+      "number": 11,
+      "type": "MCQ",
+      "question": "According to the lecture, which technology is identified as the key enabling technology for vehicle-to-vehicle and vehicle-to-road communications in Intelligent Transportation Systems?",
+      "options": [
+        "Universal Power Line Bus.",
+        "Hadoop Distributed File System (HDFS).",
+        "Supervisory Control and Data Acquisition (SCADA).",
+        "Dedicated Short-Range Communications (DSRC)."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The lecture identifies DSRC as the key enabling technology for V2V and V2R communications in connected transportation systems.",
+      "source": "See Lecture 54 (Industrial Internet of Things - Part II, slide 5)"
+    },
+    {
+      "id": "w11-q12",
+      "week": 11,
+      "number": 12,
+      "type": "MCQ",
+      "question": "In IIoT-based mining applications, which environmental parameters can be monitored using wireless sensor networks?",
+      "options": [
+        "Air quality, poisonous gases, and oxygen level inside mines.",
+        "Only the billing amount of mine workers.",
+        "Only the color of mining equipment.",
+        "Only the internet browsing history of operators."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "For mining safety, the lecture describes the use of RFID, Wi-Fi, and other wireless technologies for early warning, air-quality monitoring, poisonous-gas detection, and oxygen-level monitoring.",
+      "source": "See Lecture 54 (Industrial Internet of Things - Part II, slide 7)"
+    },
+    {
+      "id": "w11-q13",
+      "week": 11,
+      "number": 13,
+      "type": "MCQ",
+      "question": "Which Big Data characteristic refers to biases, noise, and abnormality in data?",
+      "options": [
+        "Value.",
+        "Variability.",
+        "Veracity.",
+        "Volume."
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "The lecture defines veracity in terms of bias, noise, and abnormality in data and emphasizes its importance for automated decision-making and machine learning.",
+      "source": "See Lecture 55 (Data Handling and Analytics - Part I, slide 9)"
+    },
+    {
+      "id": "w11-q14",
+      "week": 11,
+      "number": 14,
+      "type": "MCQ",
+      "question": "During data pre-processing, what is the purpose of redundancy mitigation?",
+      "options": [
+        "To prevent data from being collected.",
+        "To intentionally duplicate every data item.",
+        "To convert all structured data into images.",
+        "To eliminate repeated data through detection, filtering, and compression."
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Redundancy mitigation removes repeated data using detection, filtering, and compression, helping avoid unnecessary transmission and storage.",
+      "source": "See Lecture 55 (Data Handling and Analytics - Part I, slide 18)"
+    },
+    {
+      "id": "w11-q15",
+      "week": 11,
+      "number": 15,
+      "type": "MCQ",
+      "question": "In Hadoop Distributed File System (HDFS), which node stores the actual data blocks?",
+      "options": [
+        "Datanode.",
+        "Namenode.",
+        "Job Tracker.",
+        "YARN Resource Negotiator only."
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The Namenode maintains filesystem metadata, while Datanodes store the actual data. HDFS divides files into blocks and replicates those blocks across Datanodes.",
+      "source": "See Lecture 55 (Data Handling and Analytics - Part I, slide 23)"
+    }
+  ]
+}

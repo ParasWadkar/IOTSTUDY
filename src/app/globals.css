@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design tokens (RGB triplets so Tailwind can apply opacity). Dark is its own palette, not an inversion. */
+:root {
+  color-scheme: light;
+  --bg: 247 246 243;
+  --surface: 255 255 255;
+  --surface-2: 241 240 236;
+  --line: 229 226 219;
+  --line-strong: 201 197 188;
+  --ink: 24 24 27;
+  --ink-2: 74 74 83;
+  --ink-3: 106 106 116;
+  --accent: 79 70 229;
+  --accent-hover: 67 56 202;
+  --accent-ink: 255 255 255;
+  --accent-soft: 238 238 252;
+  --accent-text: 67 56 202;
+  --ok: 22 101 52;
+  --ok-line: 52 150 92;
+  --ok-soft: 235 246 238;
+  --bad: 185 28 28;
+  --bad-line: 217 83 83;
+  --bad-soft: 253 238 238;
+  --shadow-card: 0 1px 2px rgb(24 24 27 / 0.05), 0 1px 1px rgb(24 24 27 / 0.03);
+}
+
+:root.dark {
+  color-scheme: dark;
+  --bg: 14 16 20;
+  --surface: 22 26 33;
+  --surface-2: 29 34 43;
+  --line: 40 46 57;
+  --line-strong: 62 70 85;
+  --ink: 235 237 242;
+  --ink-2: 170 177 190;
+  --ink-3: 137 145 160;
+  --accent: 86 88 230;
+  --accent-hover: 72 74 208;
+  --accent-ink: 255 255 255;
+  --accent-soft: 30 33 64;
+  --accent-text: 165 180 252;
+  --ok: 112 208 148;
+  --ok-line: 56 134 88;
+  --ok-soft: 19 40 30;
+  --bad: 248 142 142;
+  --bad-line: 198 92 92;
+  --bad-soft: 46 22 25;
+  --shadow-card: none;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  overflow-wrap: anywhere;
+  font-feature-settings: 'cv11', 'ss01';
+}
+
+::selection {
+  background: rgb(var(--accent) / 0.25);
+}
+
+:focus-visible {
+  outline: 2px solid rgb(var(--accent-text));
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

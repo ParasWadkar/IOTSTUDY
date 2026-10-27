@@ -1,0 +1,88 @@
+{
+ "w5-q1": [
+  "Correct — interoperability enables different IoT devices and systems to communicate and exchange data.",
+  "Incorrect — interoperability is about devices working together, not restricting them to offline operation.",
+  "Incorrect — interoperability allows devices using different protocols to work together, so it is not limited to one protocol.",
+  "Incorrect — interoperability helps devices cooperate and does not disable other devices."
+ ],
+ "w5-q2": [
+  "Correct — syntactic interoperability concerns the format of messages exchanged between devices and users.",
+  "Incorrect — battery size is a physical hardware property unrelated to message exchange.",
+  "Incorrect — device colour is a physical attribute and has nothing to do with interoperability.",
+  "Incorrect — sensor weight is a physical attribute and has nothing to do with message formats."
+ ],
+ "w5-q3": [
+  "Correct — UMB stands for Universal Middleware Bridge, which helps different middleware-based devices work together.",
+  "Incorrect — Unified Mobile Board is not what UMB stands for.",
+  "Incorrect — Universal Memory Block is not what UMB stands for.",
+  "Incorrect — User Management Bridge is not what UMB stands for."
+ ],
+ "w5-q4": [
+  "Incorrect — 3.3 V is the level used by some other boards and 3.3 V pins, but not the Arduino UNO operating voltage.",
+  "Correct — the Arduino UNO operates at 5 volts.",
+  "Incorrect — 9 V is a common battery voltage, not the UNO operating voltage.",
+  "Incorrect — 12 V is at the upper end of the recommended input supply range, not the UNO operating voltage."
+ ],
+ "w5-q5": [
+  "Incorrect — a packet is a unit of data sent over a network, not a program written in the Arduino IDE.",
+  "Correct — a program created and uploaded using the Arduino IDE is called a sketch.",
+  "Incorrect — a frame is a link-layer data unit in networking, not an Arduino program.",
+  "Incorrect — a query is a request for information, not the name of an Arduino program."
+ ],
+ "w5-q6": [
+  "Incorrect — HDMI is a video output interface and is not used to program an Arduino UNO.",
+  "Correct — the Arduino UNO connects to a computer through USB, used to upload programs and supply power.",
+  "Incorrect — VGA is a video display interface, not used to connect an Arduino UNO to a computer.",
+  "Incorrect — the standard UNO has no built-in Ethernet port; it needs a separate shield, and it is not the main computer link."
+ ],
+ "w5-q7": [
+  "Incorrect — negative indices are not valid array positions in Arduino C/C++.",
+  "Correct — Arduino arrays are zero-based, as in C and C++, so the first element is at index 0.",
+  "Incorrect — index 1 is the second element, because indexing starts at 0.",
+  "Incorrect — index 2 is the third element, not the starting one."
+ ],
+ "w5-q8": [
+  "Correct — the random() function generates a pseudo-random number within a specified range.",
+  "Incorrect — pinMode() configures a pin as input or output and does not generate random numbers.",
+  "Incorrect — digitalWrite() sets a digital pin HIGH or LOW and does not generate random numbers.",
+  "Incorrect — attachInterrupt() attaches an interrupt service routine to a pin and does not generate random numbers."
+ ],
+ "w5-q9": [
+  "Incorrect — red represents stop and comes last in the sequence, not first.",
+  "Incorrect — yellow is the intermediate signal, switched on after green.",
+  "Correct — the traffic() function first sets the green LED HIGH to show the GO message, then switches to yellow and red.",
+  "Incorrect — the example switches the LEDs on in sequence, not all three together."
+ ],
+ "w5-q10": [
+  "Correct — a DHT sensor measures the temperature and humidity of its surroundings.",
+  "Incorrect — distance and speed are measured by other sensors, such as ultrasonic sensors, not a DHT.",
+  "Incorrect — light and sound need different sensors, such as an LDR and a microphone, not a DHT.",
+  "Incorrect — pressure and altitude are measured by barometric sensors, not a DHT."
+ ],
+ "w5-q11": [
+  "Incorrect — a sensor is an electronic element producing a signal, not a software program.",
+  "Incorrect — converting to mechanical motion is the job of an actuator, not a sensor.",
+  "Incorrect — a network address identifies a device on a network and is not what a sensor produces.",
+  "Correct — a sensor converts a physical quantity or measurement into an electrical signal."
+ ],
+ "w5-q12": [
+  "Incorrect — delay() takes milliseconds, so 0.2 seconds would be delay(200).",
+  "Incorrect — 1 second would need delay(1000), not delay(2000).",
+  "Correct — delay() takes milliseconds, so delay(2000) equals 2000 ms, or 2 seconds.",
+  "Incorrect — 20 seconds would need delay(20000)."
+ ],
+ "w5-q13": [
+  "Incorrect — the statement is false; a servo motor is high-precision and provides controlled rotary motion, not only linear motion.",
+  "Correct — a servo motor is a high-precision motor providing controlled rotary motion, so the statement is false."
+ ],
+ "w5-q14": [
+  "Incorrect — an ultrasonic sensor measures distance and is a sensor, not a motion-producing actuator.",
+  "Incorrect — a DHT sensor measures temperature and humidity and does not produce motion.",
+  "Incorrect — a PIR sensor detects motion by sensing changes in infrared radiation; it is a sensor and does not produce rotary motion.",
+  "Correct — a servo motor is an actuator that provides precise and controlled rotary motion."
+ ],
+ "w5-q15": [
+  "Correct — a stepper motor is one of the motor actuators discussed in the lecture.",
+  "Incorrect — the statement is true; a stepper motor is an actuator, so False is wrong."
+ ]
+}

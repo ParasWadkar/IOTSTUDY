@@ -1,0 +1,276 @@
+{
+  "week": 10,
+  "title": "Week 10",
+  "questions": [
+    {
+      "id": "w10-q1",
+      "week": 10,
+      "number": 1,
+      "type": "MCQ",
+      "question": "In the analogy comparing humans to smart cities presented in the lecture, what do 'Sensors and Tags' correspond to?",
+      "options": [
+        "Skeleton",
+        "Nerves",
+        "Sensory Organs",
+        "Brain"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In the human–smart city analogy, Sensors and Tags correspond to Sensory Organs, Buildings/Industries/People correspond to the Skeleton, digital telecommunication networks correspond to Nerves, and ubiquitously embedded intelligence corresponds to the Brain.",
+      "source": "See Lecture 46 (Smart Cities and Smart Homes – Part I, slide 3)"
+    },
+    {
+      "id": "w10-q2",
+      "week": 10,
+      "number": 2,
+      "type": "MCQ",
+      "question": "Which of the following is listed as one of the six 'Application Focus Areas' of a smart city?",
+      "options": [
+        "Smart Economy",
+        "Smart Bandwidth",
+        "Smart Voltage",
+        "Smart Currency"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The six application focus areas listed are Smart Economy, Smart Governance, Smart People, Smart Mobility, Smart Environment, and Smart Living.",
+      "source": "See Lecture 46 (Smart Cities and Smart Homes – Part I, slide 4)"
+    },
+    {
+      "id": "w10-q3",
+      "week": 10,
+      "number": 3,
+      "type": "MCQ",
+      "question": "Under 'Current Focus Areas' of smart cities, which application area specifically deals with the auto routing of vehicles to empty slots and detecting vacant slots?",
+      "options": [
+        "Smart Homes",
+        "Smart Energy",
+        "Smart Health",
+        "Smart Parking Lots"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Smart Parking Lots focus on auto routing of vehicles to empty slots, auto charging for services provided, and detection of vacant slots in the parking lot.",
+      "source": "See Lecture 46 (Smart Cities and Smart Homes – Part I, slide 11)"
+    },
+    {
+      "id": "w10-q4",
+      "week": 10,
+      "number": 4,
+      "type": "MCQ",
+      "question": "Which IoT challenge in smart cities relates to the risk of data leakage arising from multiple tenants sharing the same infrastructure?",
+      "options": [
+        "Reliability",
+        "Heterogeneity",
+        "Security and Privacy",
+        "Legal and Social aspects"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Under Security and Privacy challenges, the lecture notes exposure to attacks and vulnerabilities, and that multi-tenancy induces the risk of data leakage.",
+      "source": "See Lecture 46 (Smart Cities and Smart Homes – Part I, slide 16)"
+    },
+    {
+      "id": "w10-q5",
+      "week": 10,
+      "number": 5,
+      "type": "MCQ",
+      "question": "What is the primary purpose of data fusion in IoT-enabled smart city environments, as described in the lecture?",
+      "options": [
+        "To delete redundant sensors from the network",
+        "To make the large incoming data volume precise and accurate for better decision making",
+        "To replace the need for any sensors",
+        "To increase network latency intentionally"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Data fusion addresses the challenge of making large, incoming data volumes precise and accurate, since the quality of data precision and accuracy directly affects the quality of decision-making in IoT-enabled smart cities.",
+      "source": "See Lecture 47 (Smart Cities and Smart Homes – Part II, slide 2)"
+    },
+    {
+      "id": "w10-q6",
+      "week": 10,
+      "number": 6,
+      "type": "MCQ",
+      "question": "Which data fusion challenge refers to the situation where the same type of sensor reports different data for the same location?",
+      "options": [
+        "Imperfection",
+        "Ambiguity",
+        "Conflicts",
+        "Alignment"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Conflicts arise when the same sensor type reports different data for the same location. Imperfection refers to inaccurate/uncertain sensor data, Ambiguity refers to outliers/missing data, and Alignment relates to converting sensor data frames to a singular frame.",
+      "source": "See Lecture 47 (Smart Cities and Smart Homes – Part II, slide 4)"
+    },
+    {
+      "id": "w10-q7",
+      "week": 10,
+      "number": 7,
+      "type": "MCQ",
+      "question": "In the stages of data fusion, at which level does the fusion of information happen at the sensor node or within the local network itself?",
+      "options": [
+        "Decision level",
+        "Feature level",
+        "Pixel level",
+        "Signal level"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Signal level fusion occurs at the sensor node or within the local network itself, while pixel level occurs at the imaging device, feature level occurs prior to decision making, and decision level is an ensemble of decisions.",
+      "source": "See Lecture 47 (Smart Cities and Smart Homes – Part II, slide 6)"
+    },
+    {
+      "id": "w10-q8",
+      "week": 10,
+      "number": 8,
+      "type": "MCQ",
+      "question": "Which of the following is listed as one of the three functional layers of a smart parking system?",
+      "options": [
+        "Information Collection",
+        "Fuel Refilling",
+        "Vehicle Manufacturing",
+        "Traffic Signal Coloring"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Smart parking has three functional layers: Information Collection, System Deployment, and Service Dissemination.",
+      "source": "See Lecture 47 (Smart Cities and Smart Homes – Part II, slide 11)"
+    },
+    {
+      "id": "w10-q9",
+      "week": 10,
+      "number": 9,
+      "type": "MCQ",
+      "question": "In the classification of energy harvesting solutions for smart cities, which type involves energy sources intentionally deployed near IoT devices?",
+      "options": [
+        "Ambient energy harvesting",
+        "Passive harvesting",
+        "Grid-tied harvesting",
+        "Dedicated energy harvesting"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Dedicated energy harvesting involves energy sources intentionally deployed near IoT sources, with the amount of energy harvested depending on the sensitivity of the harvesting circuit, the distance between device and source, and the environment.",
+      "source": "See Lecture 48 (Smart Cities and Smart Homes – Part III, slide 18)"
+    },
+    {
+      "id": "w10-q10",
+      "week": 10,
+      "number": 10,
+      "type": "MCQ",
+      "question": "Which Home Area Network (HAN) standard is defined by IEEE 802.15.4 at the physical and MAC layers, and aims at low-cost, low-energy devices?",
+      "options": [
+        "UPnP",
+        "DLNA",
+        "Zigbee",
+        "X-10"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Zigbee consists of four layers (Physical, MAC, Network, Application); the Physical and MAC layers are defined by IEEE 802.15.4, while Network and Application layers are defined by Zigbee itself, and it targets low-cost, low-energy devices.",
+      "source": "See Lecture 48 (Smart Cities and Smart Homes – Part III, slide 14)"
+    },
+    {
+      "id": "w10-q11",
+      "week": 10,
+      "number": 11,
+      "type": "MCQ",
+      "question": "Which HAN standard enables remote control of compliant devices over existing power lines and electrical wiring in a house, and is mainly used for lighting and appliance control?",
+      "options": [
+        "Konnex (KNX)",
+        "UPnP",
+        "LonWorks",
+        "X-10"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "X-10 enables remote control of compliant transmitters and receivers over power lines and electrical wiring, is adopted by GE and Philips, has low speed and low data rate, and is mainly used for control of lighting, appliance networks, and security sensors.",
+      "source": "See Lecture 48 (Smart Cities and Smart Homes – Part III, slide 15)"
+    },
+    {
+      "id": "w10-q12",
+      "week": 10,
+      "number": 12,
+      "type": "MCQ",
+      "question": "According to the lecture, why does traditional TCP/IP fail to work well for Vehicle-to-Everything (V2X) communication?",
+      "options": [
+        "TCP/IP was designed mainly for single-pair information exchange dependent on data location",
+        "TCP/IP cannot be used with any wireless devices",
+        "TCP/IP requires no IP addresses at all",
+        "TCP/IP works only in stationary networks with no scalability limits"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "TCP/IP is designed mainly for handling information exchange between a single pair of entities, is dependent on the location of data, and can only identify endpoint addresses — which alone is not useful for content distribution in highly mobile V2X environments.",
+      "source": "See Lecture 49 (Connected Vehicles – Part I, slide 7)"
+    },
+    {
+      "id": "w10-q13",
+      "week": 10,
+      "number": 13,
+      "type": "MCQ",
+      "question": "Which frequency spectrum did the US Department of Transport and FCC allocate for Intelligent Connected Vehicles (ICVs)?",
+      "options": [
+        "2.4 GHz ISM band",
+        "75 MHz (5850–5925 MHz)",
+        "900 MHz band",
+        "60 GHz mmWave band"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The US Department of Transport and Federal Communications Commission allocated 75 MHz (5850–5925 MHz) as the dedicated spectrum for ICVs, based on Dedicated Short Range Communication (DSRC) technology.",
+      "source": "See Lecture 50 (Connected Vehicles – Part II, slide 3)"
+    },
+    {
+      "id": "w10-q14",
+      "week": 10,
+      "number": 14,
+      "type": "MCQ",
+      "question": "In the phases of ICV development described in the lecture, which phase is based on 4G LTE or DSRC and focuses on intelligent transportation services?",
+      "options": [
+        "Phase-1",
+        "Phase-2",
+        "Phase-3",
+        "Phase-0"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Phase-1 covers infotainment services based on 2G/3G, Phase-2 covers intelligent transportation services based on 4G LTE or DSRC, and Phase-3 covers vehicles connected to the cloud.",
+      "source": "See Lecture 50 (Connected Vehicles – Part II, slide 6)"
+    },
+    {
+      "id": "w10-q15",
+      "week": 10,
+      "number": 15,
+      "type": "MCQ",
+      "question": "In the VANET domain classification, which domain consists of vehicles (mobile) and Road-Side Units (RSUs, static), communicating via V2V or V2I using the DSRC stack?",
+      "options": [
+        "In-Vehicle Domain",
+        "Cloud Domain",
+        "Infrastructure Domain",
+        "Ad-hoc Domain"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Ad-hoc Domain is composed of vehicles (OBUs, which are mobile) and Road-Side Units (RSUs, which are static); communication may be V2V or V2I, carried out through the DSRC stack (IEEE 802.11p).",
+      "source": "See Lecture 50 (Connected Vehicles – Part II, slide 12)"
+    }
+  ]
+}

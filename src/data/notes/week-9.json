@@ -1,0 +1,92 @@
+{
+ "w9-q1": [
+  "Incorrect — Google was not the partner in launching OpenStack.",
+  "Incorrect — Microsoft was not the partner in launching OpenStack.",
+  "Correct — OpenStack was launched in 2010 as a joint project of Rackspace Hosting and NASA.",
+  "Incorrect — IBM was not the partner in launching OpenStack."
+ ],
+ "w9-q2": [
+  "Incorrect — Nova is the compute service, not the dashboard.",
+  "Incorrect — Keystone is the identity service, not the dashboard.",
+  "Correct — Horizon is the OpenStack dashboard, providing the GUI and an overview of the other components.",
+  "Incorrect — Swift is the object storage service, not the dashboard."
+ ],
+ "w9-q3": [
+  "Correct — Nova is the compute service, where you launch your instances.",
+  "Incorrect — Glance is the image service, not the compute service.",
+  "Incorrect — Cinder provides block storage, not compute.",
+  "Incorrect — Neutron provides networking, not compute."
+ ],
+ "w9-q4": [
+  "Correct — After configuring local.conf, running stack.sh from the Devstack repository installs OpenStack.",
+  "Incorrect — docker-compose orchestrates containers and is not the installer used in the lecture.",
+  "Incorrect — kubeadm bootstraps Kubernetes clusters, not OpenStack.",
+  "Incorrect — ansible-playbook is a configuration tool and is not the installer used here."
+ ],
+ "w9-q5": [
+  "Incorrect — Sensor-cloud virtualizes sensor nodes; it does not physically replace sensor hardware.",
+  "Correct — Sensor-cloud introduces virtualization of the sensor node, offered on a pay-per-use basis, beyond merely sending data to the cloud.",
+  "Incorrect — Sensor-cloud does not claim to eliminate the sink node.",
+  "Incorrect — Sensor-cloud is offered pay-per-use, not free and unlimited."
+ ],
+ "w9-q6": [
+  "Incorrect — In sensor-cloud, redeployment and maintenance shift to the SCSP, not in a traditional WSN.",
+  "Incorrect — The sensor-cloud end-user takes over usage, not redeployment, and only in the sensor-cloud model.",
+  "Correct — In a traditional WSN the WSN-user is responsible for ownership, deployment, redeployment, maintenance and usage.",
+  "Incorrect — A third-party auditor has no role in redeploying sensor nodes."
+ ],
+ "w9-q7": [
+  "Incorrect — The end-user consumes sensor-cloud services; it does not buy and lend sensors.",
+  "Correct — The sensor-owner buys physical sensors deployed at various locations and lends them to the sensor-cloud as a business actor.",
+  "Incorrect — The SCSP manages the sensor-cloud service; it is not the actor who buys and lends sensors.",
+  "Incorrect — The WSN-user belongs to the traditional WSN model, not the sensor-cloud actors."
+ ],
+ "w9-q8": [
+  "Incorrect — Traditional WSNs do not have unlimited scalability at zero cost; they have procurement and overhead issues.",
+  "Correct — WSNs are hard to adapt to changed requirements, for example repurposing an agriculture WSN for a smart home.",
+  "Incorrect — Procurement difficulty, including finding the right vendor, is a limitation, not excessive vendor availability.",
+  "Incorrect — WSNs need maintenance, and its overhead is a listed limitation."
+ ],
+ "w9-q9": [
+  "Incorrect — Composition across multiple geographic regions is CoV-II, not CoV-I.",
+  "Correct — CoV-I forms a Virtual Sensor from homogeneous sensor nodes within the same geographical boundary.",
+  "Incorrect — CoV-I is a composition method, not a pricing model.",
+  "Incorrect — CoV-I is a composition method, not a caching mechanism."
+ ],
+ "w9-q10": [
+  "Incorrect — The External Cache is the source the Internal Cache may re-cache from, not the one serving end-user requests.",
+  "Incorrect — The Sensor Cache is not the cache that handles end-user requests directly.",
+  "Incorrect — A Distributed Cache is not the cache named for handling end-user requests here.",
+  "Correct — The Internal Cache handles end-user requests and decides whether to serve directly or re-cache from the External Cache."
+ ],
+ "w9-q11": [
+  "Incorrect — Caching is useful because conditions often change slowly, not extremely fast.",
+  "Incorrect — Caching does not remove the need for a sensor-owner.",
+  "Incorrect — Caching does not replace virtualization.",
+  "Correct — Environmental conditions often change slowly, so repeated sensing wastes energy; adaptive caching avoids this."
+ ],
+ "w9-q12": [
+  "Incorrect — Google did not coin the term fog computing.",
+  "Incorrect — Amazon did not coin the term fog computing.",
+  "Correct — The term fog computing, or fogging, was coined by CISCO.",
+  "Incorrect — IBM did not coin the term fog computing."
+ ],
+ "w9-q13": [
+  "Incorrect — Traditional cloud suffers from huge traffic consuming bandwidth, not excess bandwidth availability.",
+  "Correct — The cloud model faces volume, latency and bandwidth limitations, which motivate fog computing.",
+  "Incorrect — The issue is the cloud's distance from devices, not too much local processing at the device level.",
+  "Incorrect — IoT devices are plentiful, billions of them; their absence is not the issue."
+ ],
+ "w9-q14": [
+  "Incorrect — Fog sits closer to devices, not above the cloud layer.",
+  "Correct — The fog layer sits between the cloud and the IoT devices, processing sensor data before it goes to the cloud.",
+  "Incorrect — Fog is a layer with many fog nodes, not only inside each IoT device.",
+  "Incorrect — Fog extends the cloud closer to devices and does not replace it."
+ ],
+ "w9-q15": [
+  "Incorrect — Transient storage is a required fog node characteristic, so it is not the exception.",
+  "Incorrect — Computing facility for quick decisions is a required fog node characteristic.",
+  "Incorrect — Network connectivity to devices, other fog nodes and the cloud is required.",
+  "Correct — Permanent unlimited archival storage is not a fog node requirement; that is the cloud's role."
+ ]
+}

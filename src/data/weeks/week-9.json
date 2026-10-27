@@ -1,0 +1,276 @@
+{
+  "week": 9,
+  "title": "Week 9",
+  "questions": [
+    {
+      "id": "w9-q1",
+      "week": 9,
+      "number": 1,
+      "type": "MCQ",
+      "question": "OpenStack was launched in 2010 as a joint project between Rackspace Hosting and which other organization?",
+      "options": [
+        "Google",
+        "Microsoft",
+        "NASA",
+        "IBM"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "OpenStack, a software used to create cloud infrastructure, was launched as a joint project of Rackspace Hosting and NASA in 2010, and is open source.",
+      "source": "See Lecture 41 (Cloud Computing – Practical, slide 3)"
+    },
+    {
+      "id": "w9-q2",
+      "week": 9,
+      "number": 2,
+      "type": "MCQ",
+      "question": "Which OpenStack component provides the dashboard (GUI) that gives an overview of the other components?",
+      "options": [
+        "Nova",
+        "Keystone",
+        "Horizon",
+        "Swift"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Horizon is the dashboard component of OpenStack — it provides the GUI of the software and gives an overview of the other components.",
+      "source": "See Lecture 41 (Cloud Computing – Practical, slide 5)"
+    },
+    {
+      "id": "w9-q3",
+      "week": 9,
+      "number": 3,
+      "type": "MCQ",
+      "question": "Which OpenStack component is the compute service where instances are launched?",
+      "options": [
+        "Nova",
+        "Glance",
+        "Cinder",
+        "Neutron"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Nova is the compute service in OpenStack — it is where you launch your instances. Glance is the image service, Cinder is block storage, and Neutron provides networking.",
+      "source": "See Lecture 41 (Cloud Computing – Practical, slide 6)"
+    },
+    {
+      "id": "w9-q4",
+      "week": 9,
+      "number": 4,
+      "type": "MCQ",
+      "question": "Which script/tool is used in the lecture to install OpenStack, requiring the local.conf file to be configured with passwords and host IP before running?",
+      "options": [
+        "stack.sh via Devstack",
+        "docker-compose",
+        "kubeadm",
+        "ansible-playbook"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "OpenStack is installed using Devstack: after cloning the devstack repository and configuring local.conf with ADMIN_PASSWORD, DATABASE_PASSWORD, RABBIT_PASSWORD, SERVICE_PASSWORD, and HOST_IP, the stack.sh file is run to install it.",
+      "source": "See Lecture 41 (Cloud Computing – Practical, slides 9–10)"
+    },
+    {
+      "id": "w9-q5",
+      "week": 9,
+      "number": 5,
+      "type": "MCQ",
+      "question": "According to the lecture, what does sensor-cloud fundamentally provide, beyond merely integrating sensors with cloud computing?",
+      "options": [
+        "A physical replacement for all sensor hardware",
+        "Virtualization of sensor nodes, offered on a pay-per-use basis",
+        "A way to eliminate the need for a sink node",
+        "Free unlimited sensor deployment"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Sensor-cloud is not mere integration of sensors and cloud computing or 'dumping sensor data into the cloud' — it introduces the concept of virtualization of the sensor node, offered on a pay-per-use basis, acting as a stratum between sensor nodes and end-users.",
+      "source": "See Lecture 42 (Sensor-Cloud – Part I: Sensor-as-a-Service, slide 10)"
+    },
+    {
+      "id": "w9-q6",
+      "week": 9,
+      "number": 6,
+      "type": "MCQ",
+      "question": "In a traditional Wireless Sensor Network (WSN), who is typically responsible for redeployment of the sensor nodes?",
+      "options": [
+        "The Sensor-Cloud Service Provider (SCSP)",
+        "The end-user of the sensor-cloud",
+        "The WSN-user",
+        "A third-party auditor"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "In a traditional WSN, the WSN-user is responsible for ownership, deployment, redeployment, maintenance, overhead, and usage. In sensor-cloud, redeployment and maintenance shift to the Sensor-Cloud Service Provider (SCSP), while usage shifts to the end-user.",
+      "source": "See Lecture 42 (Sensor-Cloud – Part I: Sensor-as-a-Service, slide 12)"
+    },
+    {
+      "id": "w9-q7",
+      "week": 9,
+      "number": 7,
+      "type": "MCQ",
+      "question": "In the sensor-cloud model, which actor purchases physical sensor devices and lends them to the sensor- cloud, playing a role from a business perspective?",
+      "options": [
+        "End-user",
+        "Sensor-owner",
+        "Sensor-Cloud Service Provider (SCSP)",
+        "WSN-user"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The Sensor-owner purchases physical sensor devices deployed over different geographical locations and lends these devices to the sensor-cloud, acting as a business actor.",
+      "source": "See Lecture 42 (Sensor-Cloud – Part I: Sensor-as-a-Service, slide 13)"
+    },
+    {
+      "id": "w9-q8",
+      "week": 9,
+      "number": 8,
+      "type": "MCQ",
+      "question": "Which of the following is listed as a major limitation of traditional WSNs that motivates the sensor- cloud model?",
+      "options": [
+        "Unlimited scalability at zero cost",
+        "Difficulty adapting to a change of requirement (e.g., moving from agriculture to smart home use)",
+        "Excessive availability of skilled vendors",
+        "No need for maintenance"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Limitations of WSNs include procurement issues (price, right vendor, sensor types), deployment and maintenance overheads, and difficulty adapting to a change of requirement — e.g., a WSN built for agriculture cannot easily be repurposed for a smart home.",
+      "source": "See Lecture 42 (Sensor-Cloud – Part I: Sensor-as-a-Service, slide 9)"
+    },
+    {
+      "id": "w9-q9",
+      "week": 9,
+      "number": 9,
+      "type": "MCQ",
+      "question": "In the Optimal Composition of Virtual Sensors, what does CoV-I refer to?",
+      "options": [
+        "Composition of virtual sensors spanning multiple geographic regions",
+        "Composition of virtual sensors using only homogeneous nodes within the same geographic region",
+        "A pricing model for sensor-cloud",
+        "A caching mechanism for sensor data"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "CoV-I refers to the formation of a Virtual Sensor (VS) using homogeneous sensor nodes within the same geographical boundary, while CoV-II spans multiple regions using heterogeneous nodes to form a Virtual Sensor Group (VSG).",
+      "source": "See Lecture 43 (Sensor-Cloud – Part II: Sensor-as-a-Service, slide 6)"
+    },
+    {
+      "id": "w9-q10",
+      "week": 9,
+      "number": 10,
+      "type": "MCQ",
+      "question": "In the sensor-cloud caching mechanism, which cache handles requests directly from the end-user and decides whether to serve data directly or re-cache from another source?",
+      "options": [
+        "External Cache (EC)",
+        "Sensor Cache (SC)",
+        "Distributed Cache (DC)",
+        "Internal Cache (IC)"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The Internal Cache (IC) handles requests from the end-user and takes the decision on whether the data should be provided directly or whether it is required to re-cache the data from the External Cache (EC).",
+      "source": "See Lecture 43 (Sensor-Cloud – Part II: Sensor-as-a-Service, slide 13)"
+    },
+    {
+      "id": "w9-q11",
+      "week": 9,
+      "number": 11,
+      "type": "MCQ",
+      "question": "Why is dynamic and adaptive data caching useful in sensor-cloud, according to the lecture?",
+      "options": [
+        "Because environmental conditions always change extremely fast",
+        "Because it removes the need for a sensor-owner",
+        "Because caching eliminates the need for virtualization",
+        "Because unnecessary sensing during slow environmental change wastes energy"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In many cases, environmental conditions change quite slowly, so the sensed data of physical sensors remains largely unaltered; unnecessary sensing under such conditions causes needless energy consumption, motivating adaptive caching.",
+      "source": "See Lecture 43 (Sensor-Cloud – Part II: Sensor-as-a-Service, slide 12)"
+    },
+    {
+      "id": "w9-q12",
+      "week": 9,
+      "number": 12,
+      "type": "MCQ",
+      "question": "Which company is credited with coining the term 'fog computing'?",
+      "options": [
+        "Google",
+        "Amazon",
+        "CISCO",
+        "IBM"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Fog computing, or 'fogging,' is a term coined by CISCO. The idea is to extend the cloud nearer to IoT devices by introducing an intermediate layer between the cloud and the devices.",
+      "source": "See Lecture 44 (Fog Computing – Part I, slide 2)"
+    },
+    {
+      "id": "w9-q13",
+      "week": 9,
+      "number": 13,
+      "type": "MCQ",
+      "question": "Which of the following is listed as a key issue with the traditional cloud model that motivates fog computing?",
+      "options": [
+        "Excess bandwidth availability",
+        "Volume, latency, and bandwidth limitations of the cloud",
+        "Too much local processing power at the device level",
+        "Absence of any IoT devices"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The current cloud model faces issues of Volume (too much data to process/store), Latency (round-trip time is too slow for time-sensitive data), and Bandwidth (huge traffic generated by billions of devices consumes most available bandwidth).",
+      "source": "See Lecture 44 (Fog Computing – Part I, slide 6)"
+    },
+    {
+      "id": "w9-q14",
+      "week": 9,
+      "number": 14,
+      "type": "MCQ",
+      "question": "Where is the fog layer positioned in the fog computing architecture?",
+      "options": [
+        "Above the cloud layer",
+        "Between the cloud and the IoT devices",
+        "Inside each IoT device only",
+        "There is no fixed position; it replaces the cloud entirely"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Fog is a layer between the cloud and IoT devices; many fog nodes can be present, and sensor data are processed in the fog before being sent to the cloud, reducing latency and saving bandwidth and cloud storage.",
+      "source": "See Lecture 45 (Fog Computing – Part II, slide 2)"
+    },
+    {
+      "id": "w9-q15",
+      "week": 9,
+      "number": 15,
+      "type": "MCQ",
+      "question": "Which of the following is NOT listed as a required characteristic of a fog node?",
+      "options": [
+        "Storage (transient)",
+        "Computing facility for quick decisions",
+        "Network connectivity",
+        "Permanent, unlimited archival storage"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Fog nodes need transient storage, computing facility (to process data and take quick decisions), and network connectivity to connect with IoT devices, other fog nodes, and the cloud — not permanent unlimited archival storage, which is the cloud's role.",
+      "source": "See Lecture 45 (Fog Computing – Part II, slide 4)"
+    }
+  ]
+}

@@ -6,7 +6,8 @@ import { modeTitle, poolFor, questionById, shuffle } from '@/lib/data';
 import { useStore } from '@/lib/store';
 import type { Answer } from '@/lib/types';
 import BookmarkButton from './BookmarkButton';
-import { ArrowRight, Check, ChevronLeft, Shuffle, X } from './icons';
+import { Check, ChevronLeft, Shuffle, X } from './icons';
+import NextButton from './NextButton';
 import OptionList from './OptionList';
 
 const typeLabel = { MCQ: 'Single choice', MSQ: 'Select all that apply', TF: 'True / False' } as const;
@@ -215,10 +216,7 @@ export default function Quiz({ id }: { id: string }) {
         )}
 
         {ans && (
-          <button onClick={next} className={`${primaryBtn} mt-4`}>
-            {isLast ? 'Finish' : 'Next'}
-            <ArrowRight className="h-[18px] w-[18px]" />
-          </button>
+          <NextButton onClick={next} label={isLast ? 'Finish' : 'Next'} className={`${primaryBtn} mt-4`} />
         )}
       </div>
     </div>

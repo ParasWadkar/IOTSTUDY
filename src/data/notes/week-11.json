@@ -39,7 +39,7 @@
   "Correct — a gateway connects a group of closely located smart meters and links them to the DAUs.",
   "Incorrect — a gateway does not link power plants directly to home appliances.",
   "Incorrect — PMUs are transmission monitoring devices and are not connected to plug-in vehicles by a gateway.",
-  "Incorrect — renewable generators still need intermediate communication; a gateway does not bypass it to SCADA."
+  "Incorrect — a gateway links a group of closely located smart meters to the DAUs, not renewable generators to SCADA."
  ],
  "w11-q8": [
   "Incorrect — net metering is a billing scheme, not a type of attack.",

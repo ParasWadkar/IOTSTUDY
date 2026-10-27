@@ -50,7 +50,7 @@
  "w10-q9": [
   "Incorrect — ambient harvesting uses energy already present in the environment, not sources intentionally deployed near the devices.",
   "Incorrect — passive harvesting is not the category defined by deliberately placing energy sources near IoT devices.",
-  "Incorrect — grid-tied harvesting is not a recognized category here; it would draw on mains power rather than harvest energy.",
+  "Incorrect — intentionally deployed energy sources near IoT devices define dedicated energy harvesting, not grid-tied harvesting.",
   "Correct — dedicated energy harvesting uses energy sources intentionally deployed near IoT devices."
  ],
  "w10-q10": [
@@ -60,7 +60,7 @@
   "Incorrect — X-10 communicates over power lines and is not based on IEEE 802.15.4."
  ],
  "w10-q11": [
-  "Incorrect — Konnex (KNX) is a building automation standard using dedicated media, not the power-line standard described here.",
+  "Incorrect — Konnex (KNX) is a building automation standard, not the low-speed X-10 style power-line lighting and appliance control standard described here.",
   "Incorrect — UPnP is a network device discovery protocol suite, not a power-line control standard.",
   "Incorrect — LonWorks is a control networking platform and is not the low-speed power-line lighting standard asked about.",
   "Correct — X-10 controls compliant devices over existing power lines and wiring, mainly for lighting and appliances."
@@ -85,7 +85,7 @@
  ],
  "w10-q15": [
   "Incorrect — the in-vehicle domain is the network inside a vehicle, not the vehicle-to-RSU ad-hoc communication using DSRC.",
-  "Incorrect — the cloud domain covers cloud-based services and is not formed by vehicles and RSUs communicating via DSRC.",
+  "Incorrect — mobile vehicles and static RSUs communicating via V2V or V2I over the DSRC stack form the Ad-hoc Domain, not a cloud domain.",
   "Incorrect — the infrastructure domain is not the one composed of mobile OBUs and static RSUs communicating via the DSRC stack.",
   "Correct — the Ad-hoc Domain consists of mobile vehicles (OBUs) and static RSUs communicating by V2V or V2I through the DSRC stack."
  ]

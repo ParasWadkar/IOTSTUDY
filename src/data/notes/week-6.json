@@ -1,7 +1,7 @@
 {
  "w6-q1": [
   "Correct — the lecture states Python has five data types: Numbers, String, List, Tuple, and Dictionary.",
-  "Incorrect — this list gives types from other languages, such as Char and Byte, not Python's five basic types from the lecture.",
+  "Incorrect — this is not the lecture's list of five Python data types, which are Numbers, String, List, Tuple, and Dictionary.",
   "Incorrect — Array, Struct, Class, Object, and Set are not the five basic data types listed in the lecture.",
   "Incorrect — Queue, Stack, and Graph are data structures, not Python's built-in basic data types listed in the lecture."
  ],

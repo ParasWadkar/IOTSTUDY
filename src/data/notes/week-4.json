@@ -19,7 +19,7 @@
  ],
  "w4-q4": [
   "Correct — sensing coverage guarantees connectivity when the transmission range is at least twice the sensing range.",
-  "Incorrect — the condition is the reverse; a larger sensing range than half the transmission range does not guarantee connectivity.",
+  "Incorrect — the condition is the other way round: it is the transmission range that must be at least twice the sensing range.",
   "Incorrect — equal ranges are not enough; the transmission range must be at least twice the sensing range.",
   "Incorrect — a transmission range smaller than the sensing range makes connectivity even less likely to be guaranteed."
  ],
@@ -37,7 +37,7 @@
  ],
  "w4-q7": [
   "Incorrect — a data mule does not replace sensor nodes; the nodes still sense the data.",
-  "Incorrect — a data mule is a mobile collector and is not limited to measuring temperature.",
+  "Incorrect — a data mule does not measure anything; it collects data from sensor nodes and carries it to the sink.",
   "Correct — a data mule visits sensor nodes, collects their data, and delivers it to the sink.",
   "Incorrect — repairing hardware is a maintenance job, not the role of a data mule."
  ],
@@ -57,7 +57,7 @@
   "Correct — in a stationary WSN nodes remain fixed, so deployment and topology maintenance are comparatively easier.",
   "Incorrect — stationary nodes cannot move automatically after a failure, so this is not a feature of such a network.",
   "Incorrect — a continuously changing topology is typical of mobile networks, not stationary ones.",
-  "Incorrect — unpredictable sensor locations do not fit fixed nodes, whose positions stay known and unchanged."
+  "Incorrect — nodes in a stationary WSN remain fixed, so unpredictable sensor locations are not an advantage of such a network."
  ],
  "w4-q11": [
   "Correct — UAVs are mobile, so their relative positions and links change often, making the topology change frequently.",

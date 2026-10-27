@@ -84,7 +84,7 @@
  "w7-q15": [
   "Incorrect — Integrated Node Path Protocol is not what INPP stands for.",
   "Incorrect — Internal Node Power Processing is not what INPP stands for.",
-  "Correct — In SDN-WISE, INPP stands for In Network Packet Processing, part of the forwarding layer above IEEE 802.15.4.",
+  "Correct — In the SDN-WISE protocol stack, INPP stands for In Network Packet Processing.",
   "Incorrect — IoT Network Priority Protocol is not what INPP stands for."
  ]
 }

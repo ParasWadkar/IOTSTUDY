@@ -23,6 +23,7 @@ export default function Quiz({ id }: { id: string }) {
   const [session, setSession] = useState<Record<string, Answer>>({});
   const [pending, setPending] = useState<number[]>([]);
   const [done, setDone] = useState(false);
+  const [confirmRestart, setConfirmRestart] = useState(false);
 
   // Saved/Wrong are practice modes: they start fresh and don't persist their own order.
   const fresh = id === 'saved' || id === 'wrong';
@@ -107,17 +108,32 @@ export default function Quiz({ id }: { id: string }) {
             {correct} correct · {answers.length - correct} incorrect · {order.length - answers.length} skipped
           </p>
           <div className="mt-7 flex flex-col gap-2.5">
+            {confirmRestart && (
+              <p className="text-sm leading-relaxed text-ink-2">
+                Restarting clears your recorded answers for {modeTitle(id)}, including its wrong-question history.
+              </p>
+            )}
             <button
               onClick={() => {
+                if (!fresh && !confirmRestart) {
+                  setConfirmRestart(true);
+                  return;
+                }
                 if (!fresh) resetAnswers(order, id);
                 setSession({});
                 setIndex(0);
                 setDone(false);
+                setConfirmRestart(false);
               }}
               className={primaryBtn}
             >
-              Restart
+              {confirmRestart ? 'Clear answers and restart' : 'Restart'}
             </button>
+            {confirmRestart && (
+              <button onClick={() => setConfirmRestart(false)} className={secondaryBtn}>
+                Cancel
+              </button>
+            )}
             <Link href="/quiz/wrong" className={secondaryBtn}>
               Practice wrong questions
             </Link>

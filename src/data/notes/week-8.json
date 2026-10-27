@@ -60,7 +60,7 @@
   "Correct — The hypervisor sits above the physical hardware and manages multiple VMs, each running its own operating system."
  ],
  "w8-q11": [
-  "Incorrect — IaaS provides infrastructure that the user still manages, unlike the middleware offering described.",
+  "Incorrect — With IaaS the user still manages the operating system and software on the provided infrastructure, whereas PaaS removes that need.",
   "Incorrect — SaaS delivers complete software applications to end users, not middleware for developers.",
   "Correct — PaaS is application middleware as a service, removing the need to manage hardware and operating systems.",
   "Incorrect — Community cloud is a deployment model, not a service model."

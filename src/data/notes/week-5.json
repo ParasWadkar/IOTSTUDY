@@ -78,7 +78,7 @@
  "w5-q14": [
   "Incorrect — an ultrasonic sensor measures distance and is a sensor, not a motion-producing actuator.",
   "Incorrect — a DHT sensor measures temperature and humidity and does not produce motion.",
-  "Incorrect — a PIR sensor detects infrared motion of objects and does not produce rotary motion itself.",
+  "Incorrect — a PIR sensor detects motion by sensing changes in infrared radiation; it is a sensor and does not produce rotary motion.",
   "Correct — a servo motor is an actuator that provides precise and controlled rotary motion."
  ],
  "w5-q15": [

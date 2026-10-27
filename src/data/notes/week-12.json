@@ -2,12 +2,12 @@
  "w12-q1": [
   "Correct — qualitative analysis handles categorical data.",
   "Incorrect — quantitative analysis is used for numerical data, not categorical data.",
-  "Incorrect — regression analysis models relationships between numerical variables rather than analyzing categorical data.",
+  "Incorrect — regression models relationships between variables; the analysis type defined for categorical data is qualitative analysis.",
   "Incorrect — analysis of variance compares means across groups of numerical data; it is not the categorical-data analysis type."
  ],
  "w12-q2": [
   "Correct — a complete statistical model has as many variables as equations; a mismatch makes it incomplete.",
-  "Incorrect — a model with no variables is not complete under this definition, which requires matching counts.",
+  "Incorrect — completeness is defined by the number of variables equaling the number of equations, not by the model having no variables.",
   "Incorrect — more variables than equations is a mismatch, which makes the model incomplete.",
   "Incorrect — completeness depends on matching variables and equations, not on the data being categorical."
  ],
